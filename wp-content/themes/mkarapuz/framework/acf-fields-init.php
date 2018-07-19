@@ -3,41 +3,41 @@ if (function_exists('acf_add_local_field_group')):
 
     acf_add_local_field_group(array (
         'key'    => 'group_casino_details',
-        'title'  => esc_html__('Casino Details', 'mkarapuz'),
+        'title'  => esc_html__('Casino Details', 'mKARAPUZ_'),
         'fields' => array (
             array (
-                'key'       => 'KARAPUZcasino_visibility',
-                'label'     => esc_html__('Casino Visibility', 'mkarapuz'),
+                'key'       => 'KARAPUZ_casino_visibility',
+                'label'     => esc_html__('Casino Visibility', 'mKARAPUZ_'),
                 'name'      => 'casino_visibility',
                 'type'      => 'checkbox',
                 'choices'   => array(
-                    'on' => esc_html__('Hide in lists', 'mkarapuz'),
+                    'on' => esc_html__('Hide in lists', 'mKARAPUZ_'),
                 ),
             ),
 
             array (
-                'key'   => 'KARAPUZcasino_title',
-                'label' => esc_html__('Casino Title', 'mkarapuz'),
+                'key'   => 'KARAPUZ_casino_title',
+                'label' => esc_html__('Casino Title', 'mKARAPUZ_'),
                 'name'  => 'casino_title',
                 'type'  => 'text',
             ),
 
             array (
-                'key'   => 'KARAPUZcasino_url',
-                'label' => esc_html__('Casino URL', 'mkarapuz'),
+                'key'   => 'KARAPUZ_casino_url',
+                'label' => esc_html__('Casino URL', 'mKARAPUZ_'),
                 'name'  => 'casino_url',
                 'type'  => 'text',
             ),
 
             array (
-                'key'     => 'KARAPUZcasino_type',
-                'label'   => esc_html__('Casino Type', 'mkarapuz'),
+                'key'     => 'KARAPUZ_casino_type',
+                'label'   => esc_html__('Casino Type', 'mKARAPUZ_'),
                 'name'    => 'casino_type',
                 'type'    => 'select',
                 'choices' => array(
-                    'casino'     => esc_html__('Casino', 'mkarapuz'),
-                    'bingo'      => esc_html__('Bingo', 'mkarapuz'),
-                    'sportsbook' => esc_html__('Sportsbook', 'mkarapuz'),
+                    'casino'     => esc_html__('Casino', 'mKARAPUZ_'),
+                    'bingo'      => esc_html__('Bingo', 'mKARAPUZ_'),
+                    'sportsbook' => esc_html__('Sportsbook', 'mKARAPUZ_'),
                 ),
                 'wrapper' => array (
                     'width' => '33%',
@@ -45,16 +45,16 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'       => 'KARAPUZcasino_license',
-                'label'     => esc_html__('Casino License', 'mkarapuz'),
+                'key'       => 'KARAPUZ_casino_license',
+                'label'     => esc_html__('Casino License', 'mKARAPUZ_'),
                 'name'      => 'casino_license',
                 'type'      => 'select',
                 'choices'   => array(
-                    'default'   => esc_html__('Default (by location)', 'mkarapuz'),
-                    'alderney'  => esc_html__('Alderney', 'mkarapuz'),
-                    'curacao'   => esc_html__('Curacao', 'mkarapuz'),
-                    'malta'     => esc_html__('Malta', 'mkarapuz'),
-                    'gibraltar' => esc_html__('Gibraltar', 'mkarapuz'),
+                    'default'   => esc_html__('Default (by location)', 'mKARAPUZ_'),
+                    'alderney'  => esc_html__('Alderney', 'mKARAPUZ_'),
+                    'curacao'   => esc_html__('Curacao', 'mKARAPUZ_'),
+                    'malta'     => esc_html__('Malta', 'mKARAPUZ_'),
+                    'gibraltar' => esc_html__('Gibraltar', 'mKARAPUZ_'),
                 ),
                 'wrapper' => array (
                     'width' => '33%',
@@ -62,8 +62,8 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'     => 'KARAPUZcasino_rating',
-                'label'   => esc_html__('Casino Rating', 'mkarapuz'),
+                'key'     => 'KARAPUZ_casino_rating',
+                'label'   => esc_html__('Casino Rating', 'mKARAPUZ_'),
                 'name'    => 'casino_rating',
                 'type'    => 'range',
                 'min'     => '0',
@@ -75,8 +75,8 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'               => 'KARAPUZcasino_blockquote',
-                'label'             => esc_html__('Blockquote', 'mkarapuz'),
+                'key'               => 'KARAPUZ_casino_blockquote',
+                'label'             => esc_html__('Blockquote', 'mKARAPUZ_'),
                 'name'              => 'casino_blockquote',
                 'type'              => 'textarea',
                 'rows'              => '4',
@@ -100,11 +100,11 @@ if (function_exists('acf_add_local_field_group')):
 
     acf_add_local_field_group(array (
         'key' => 'group_casino_quick_info',
-        'title' => esc_html__('Quick Info', 'mkarapuz'),
+        'title' => esc_html__('Quick Info', 'mKARAPUZ_'),
         'fields' => array (
             array (
-                'key'               => 'KARAPUZcasino_nd_bonus',
-                'label'             => esc_html__('No Deposit Bonus', 'mkarapuz'),
+                'key'               => 'KARAPUZ_casino_nd_bonus',
+                'label'             => esc_html__('No Deposit Bonus', 'mKARAPUZ_'),
                 'name'              => 'casino_nd_bonus',
                 'type'              => 'text',
                 'wrapper'           => array (
@@ -113,8 +113,8 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'                => 'KARAPUZcasino_nd_rating',
-                'label'              => esc_html__('No Deposit Rating', 'mkarapuz'),
+                'key'                => 'KARAPUZ_casino_nd_rating',
+                'label'              => esc_html__('No Deposit Rating', 'mKARAPUZ_'),
                 'name'               => 'casino_nd_rating',
                 'type'               => 'range',
                 'min'                => '0',
@@ -126,8 +126,8 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'               => 'KARAPUZcasino_fd_bonus',
-                'label'             => esc_html__('First Deposit Bonus', 'mkarapuz'),
+                'key'               => 'KARAPUZ_casino_fd_bonus',
+                'label'             => esc_html__('First Deposit Bonus', 'mKARAPUZ_'),
                 'name'              => 'casino_fd_bonus',
                 'type'              => 'text',
                 'wrapper'           => array (
@@ -136,8 +136,8 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'                => 'KARAPUZcasino_fd_rating',
-                'label'              => esc_html__('First Deposit Rating', 'mkarapuz'),
+                'key'                => 'KARAPUZ_casino_fd_rating',
+                'label'              => esc_html__('First Deposit Rating', 'mKARAPUZ_'),
                 'name'               => 'casino_fd_rating',
                 'type'               => 'range',
                 'min'                => '0',
@@ -149,8 +149,8 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'               => 'KARAPUZcasino_wagering_requirements',
-                'label'             => esc_html__('Wagering Requirements', 'mkarapuz'),
+                'key'               => 'KARAPUZ_casino_wagering_requirements',
+                'label'             => esc_html__('Wagering Requirements', 'mKARAPUZ_'),
                 'name'              => 'casino_wagering_requirements',
                 'type'              => 'text',
                 'wrapper'           => array (
@@ -159,8 +159,8 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'                => 'KARAPUZcasino_w_rating',
-                'label'              => esc_html__('Wagering Rating', 'mkarapuz'),
+                'key'                => 'KARAPUZ_casino_w_rating',
+                'label'              => esc_html__('Wagering Rating', 'mKARAPUZ_'),
                 'name'               => 'casino_w_rating',
                 'type'               => 'range',
                 'min'                => '0',
@@ -172,8 +172,8 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'                => 'KARAPUZcasino_tb_rating',
-                'label'              => esc_html__('Total Bonus Rating', 'mkarapuz'),
+                'key'                => 'KARAPUZ_casino_tb_rating',
+                'label'              => esc_html__('Total Bonus Rating', 'mKARAPUZ_'),
                 'name'               => 'casino_tb_rating',
                 'type'               => 'range',
                 'min'                => '0',
@@ -182,14 +182,14 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'                => 'KARAPUZcasino_play_in_browser',
-                'label'              => esc_html__('Play in browser', 'mkarapuz'),
+                'key'                => 'KARAPUZ_casino_play_in_browser',
+                'label'              => esc_html__('Play in browser', 'mKARAPUZ_'),
                 'name'               => 'casino_play_in_browser',
                 'type'               => 'radio',
                 'choices' => array(
-                    'yes'	=> esc_html__('Yes', 'mkarapuz'),
-                    'no'	=> esc_html__('No', 'mkarapuz'),
-                    'hide'  => esc_html__('Hide', 'mkarapuz'),
+                    'yes'	=> esc_html__('Yes', 'mKARAPUZ_'),
+                    'no'	=> esc_html__('No', 'mKARAPUZ_'),
+                    'hide'  => esc_html__('Hide', 'mKARAPUZ_'),
                 ),
                 'layout'             => 'horizontal',
                 'wrapper'            => array (
@@ -198,14 +198,14 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'                => 'KARAPUZcasino_download',
-                'label'              => esc_html__('Download Casino', 'mkarapuz'),
+                'key'                => 'KARAPUZ_casino_download',
+                'label'              => esc_html__('Download Casino', 'mKARAPUZ_'),
                 'name'               => 'casino_download',
                 'type'               => 'radio',
                 'choices' => array(
-                    'yes'	=> esc_html__('Yes', 'mkarapuz'),
-                    'no'	=> esc_html__('No', 'mkarapuz'),
-                    'hide'  => esc_html__('Hide', 'mkarapuz'),
+                    'yes'	=> esc_html__('Yes', 'mKARAPUZ_'),
+                    'no'	=> esc_html__('No', 'mKARAPUZ_'),
+                    'hide'  => esc_html__('Hide', 'mKARAPUZ_'),
                 ),
                 'other_choice'       => 0,
                 'save_other_choice'  => 0,
@@ -216,14 +216,14 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'                => 'KARAPUZcasino_mobile',
-                'label'              => esc_html__('Mobile Casino', 'mkarapuz'),
+                'key'                => 'KARAPUZ_casino_mobile',
+                'label'              => esc_html__('Mobile Casino', 'mKARAPUZ_'),
                 'name'               => 'casino_mobile',
                 'type'               => 'radio',
                 'choices' => array(
-                    'yes'	=> esc_html__('Yes', 'mkarapuz'),
-                    'no'	=> esc_html__('No', 'mkarapuz'),
-                    'hide'  => esc_html__('Hide', 'mkarapuz'),
+                    'yes'	=> esc_html__('Yes', 'mKARAPUZ_'),
+                    'no'	=> esc_html__('No', 'mKARAPUZ_'),
+                    'hide'  => esc_html__('Hide', 'mKARAPUZ_'),
                 ),
 
                 'layout'             => 'horizontal',
@@ -233,14 +233,14 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'                => 'KARAPUZcasino_live',
-                'label'              => esc_html__('Live Casino', 'mkarapuz'),
+                'key'                => 'KARAPUZ_casino_live',
+                'label'              => esc_html__('Live Casino', 'mKARAPUZ_'),
                 'name'               => 'casino_live',
                 'type'               => 'radio',
                 'choices' => array(
-                    'yes'	=> esc_html__('Yes', 'mkarapuz'),
-                    'no'	=> esc_html__('No', 'mkarapuz'),
-                    'hide'  => esc_html__('Hide', 'mkarapuz'),
+                    'yes'	=> esc_html__('Yes', 'mKARAPUZ_'),
+                    'no'	=> esc_html__('No', 'mKARAPUZ_'),
+                    'hide'  => esc_html__('Hide', 'mKARAPUZ_'),
                 ),
                 'layout'             => 'horizontal',
                 'wrapper'            => array (
@@ -249,14 +249,14 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'                => 'KARAPUZcasino_aams_licensed',
-                'label'              => esc_html__('AAMS licensed', 'mkarapuz'),
+                'key'                => 'KARAPUZ_casino_aams_licensed',
+                'label'              => esc_html__('AAMS licensed', 'mKARAPUZ_'),
                 'name'               => 'casino_aams_licensed',
                 'type'               => 'radio',
                 'choices' => array(
-                    'yes'	=> esc_html__('Yes', 'mkarapuz'),
-                    'no'	=> esc_html__('No', 'mkarapuz'),
-                    'hide'  => esc_html__('Hide', 'mkarapuz'),
+                    'yes'	=> esc_html__('Yes', 'mKARAPUZ_'),
+                    'no'	=> esc_html__('No', 'mKARAPUZ_'),
+                    'hide'  => esc_html__('Hide', 'mKARAPUZ_'),
                 ),
                 'layout'             => 'horizontal',
                 'wrapper'            => array (
@@ -265,14 +265,14 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'                => 'KARAPUZcasino_vip_club',
-                'label'              => esc_html__('VIP Club', 'mkarapuz'),
+                'key'                => 'KARAPUZ_casino_vip_club',
+                'label'              => esc_html__('VIP Club', 'mKARAPUZ_'),
                 'name'               => 'casino_vip_club',
                 'type'               => 'radio',
                 'choices' => array(
-                    'yes'	=> esc_html__('Yes', 'mkarapuz'),
-                    'no'	=> esc_html__('No', 'mkarapuz'),
-                    'hide'  => esc_html__('Hide', 'mkarapuz'),
+                    'yes'	=> esc_html__('Yes', 'mKARAPUZ_'),
+                    'no'	=> esc_html__('No', 'mKARAPUZ_'),
+                    'hide'  => esc_html__('Hide', 'mKARAPUZ_'),
                 ),
                 'layout'             => 'horizontal',
                 'wrapper'            => array (
@@ -281,14 +281,14 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'                => 'KARAPUZcasino_daily_chat_games',
-                'label'              => esc_html__('Daily Chat Games', 'mkarapuz'),
+                'key'                => 'KARAPUZ_casino_daily_chat_games',
+                'label'              => esc_html__('Daily Chat Games', 'mKARAPUZ_'),
                 'name'               => 'casino_daily_chat_games',
                 'type'               => 'radio',
                 'choices' => array(
-                    'yes'	=> esc_html__('Yes', 'mkarapuz'),
-                    'no'	=> esc_html__('No', 'mkarapuz'),
-                    'hide'  => esc_html__('Hide', 'mkarapuz'),
+                    'yes'	=> esc_html__('Yes', 'mKARAPUZ_'),
+                    'no'	=> esc_html__('No', 'mKARAPUZ_'),
+                    'hide'  => esc_html__('Hide', 'mKARAPUZ_'),
                 ),
                 'other_choice'       => 0,
                 'save_other_choice'  => 0,
@@ -299,14 +299,14 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'                => 'KARAPUZcasino_minigames',
-                'label'              => esc_html__('Minigames', 'mkarapuz'),
+                'key'                => 'KARAPUZ_casino_minigames',
+                'label'              => esc_html__('Minigames', 'mKARAPUZ_'),
                 'name'               => 'casino_minigames',
                 'type'               => 'radio',
                 'choices' => array(
-                    'yes'	=> esc_html__('Yes', 'mkarapuz'),
-                    'no'	=> esc_html__('No', 'mkarapuz'),
-                    'hide'  => esc_html__('Hide', 'mkarapuz'),
+                    'yes'	=> esc_html__('Yes', 'mKARAPUZ_'),
+                    'no'	=> esc_html__('No', 'mKARAPUZ_'),
+                    'hide'  => esc_html__('Hide', 'mKARAPUZ_'),
                 ),
                 'layout'             => 'horizontal',
                 'wrapper'            => array (
@@ -315,21 +315,21 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'   => 'KARAPUZcasino_address',
-                'label' => esc_html__('Casino Address', 'mkarapuz'),
+                'key'   => 'KARAPUZ_casino_address',
+                'label' => esc_html__('Casino Address', 'mKARAPUZ_'),
                 'name'  => 'casino_address',
                 'type'  => 'text',
             ),
 
             array (
-                'key'   => 'KARAPUZcasino_email',
-                'label' => esc_html__('Casino Email', 'mkarapuz'),
+                'key'   => 'KARAPUZ_casino_email',
+                'label' => esc_html__('Casino Email', 'mKARAPUZ_'),
                 'name'  => 'casino_email',
                 'type'  => 'text',
             ),
 
             array (
-                'key'          => 'KARAPUZcasino_reasons_to_play',
+                'key'          => 'KARAPUZ_casino_reasons_to_play',
                 'label'        => 'Reasons to play',
                 'name'         => 'casino_reasons_to_play',
                 'type'         => 'textarea',
@@ -341,8 +341,8 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'          => 'KARAPUZcasino_slot_popup_usps',
-                'label'        => esc_html__('Slot-popup USPs', 'mkarapuz'),
+                'key'          => 'KARAPUZ_casino_slot_popup_usps',
+                'label'        => esc_html__('Slot-popup USPs', 'mKARAPUZ_'),
                 'name'         => 'casino_reasons_to_play',
                 'type'         => 'textarea',
                 'instructions' => 'Separate items with enter',
@@ -353,8 +353,8 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'          => 'KARAPUZcasino_pros',
-                'label'        => esc_html__('Pros', 'mkarapuz'),
+                'key'          => 'KARAPUZ_casino_pros',
+                'label'        => esc_html__('Pros', 'mKARAPUZ_'),
                 'name'         => 'casino_pros',
                 'type'         => 'textarea',
                 'instructions' => 'Separate items with enter',
@@ -365,8 +365,8 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'               => 'KARAPUZcasino_cons',
-                'label'             => esc_html__('Cons', 'mkarapuz'),
+                'key'               => 'KARAPUZ_casino_cons',
+                'label'             => esc_html__('Cons', 'mKARAPUZ_'),
                 'name'              => 'casino_cons',
                 'type'              => 'textarea',
                 'instructions'      => 'Separate items with enter',
@@ -377,26 +377,26 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'                => 'KARAPUZcasino_payment_methods',
+                'key'                => 'KARAPUZ_casino_payment_methods',
                 'label'              => 'Payment methods',
                 'name'               => 'casino_payment_methods',
                 'type'               => 'select',
                 'choices'            => array(
-                    'postepay'          => esc_html__('Postepay', 'mkarapuz'),
-                    'visa'              => esc_html__('Visa', 'mkarapuz'),
-                    'visa_electron'     => esc_html__('Visa Electron', 'mkarapuz'),
-                    'master_card'       => esc_html__('Master Card', 'mkarapuz'),
-                    'maestro'           => esc_html__('Maestro', 'mkarapuz'),
-                    'paypal'            => esc_html__('Paypal', 'mkarapuz'),
-                    'skrill'            => esc_html__('Skrill', 'mkarapuz'),
-                    'click_and_buy'     => esc_html__('Click And Buy', 'mkarapuz'),
-                    'entropay'          => esc_html__('Entropay', 'mkarapuz'),
-                    'neteller'          => esc_html__('Neteller', 'mkarapuz'),
-                    'paysafecard'       => esc_html__('Paysafecard', 'mkarapuz'),
-                    'bonifico_bancario' => esc_html__('Bonifico Bancario', 'mkarapuz'),
-                    'mister_cash'       => esc_html__('Mister Cash', 'mkarapuz'),
-                    'ideal'             => esc_html__('iDeal', 'mkarapuz'),
-                    'trustly'           => esc_html__('Trustly', 'mkarapuz'),
+                    'postepay'          => esc_html__('Postepay', 'mKARAPUZ_'),
+                    'visa'              => esc_html__('Visa', 'mKARAPUZ_'),
+                    'visa_electron'     => esc_html__('Visa Electron', 'mKARAPUZ_'),
+                    'master_card'       => esc_html__('Master Card', 'mKARAPUZ_'),
+                    'maestro'           => esc_html__('Maestro', 'mKARAPUZ_'),
+                    'paypal'            => esc_html__('Paypal', 'mKARAPUZ_'),
+                    'skrill'            => esc_html__('Skrill', 'mKARAPUZ_'),
+                    'click_and_buy'     => esc_html__('Click And Buy', 'mKARAPUZ_'),
+                    'entropay'          => esc_html__('Entropay', 'mKARAPUZ_'),
+                    'neteller'          => esc_html__('Neteller', 'mKARAPUZ_'),
+                    'paysafecard'       => esc_html__('Paysafecard', 'mKARAPUZ_'),
+                    'bonifico_bancario' => esc_html__('Bonifico Bancario', 'mKARAPUZ_'),
+                    'mister_cash'       => esc_html__('Mister Cash', 'mKARAPUZ_'),
+                    'ideal'             => esc_html__('iDeal', 'mKARAPUZ_'),
+                    'trustly'           => esc_html__('Trustly', 'mKARAPUZ_'),
                 ),
                 'wrapper'            => array (
                     'width' => '50%',
@@ -426,8 +426,8 @@ if (function_exists('acf_add_local_field_group')):
         'title' => 'Advertisement',
         'fields' => array (
             array (
-                'key'           => 'KARAPUZcasino_featured_for_software',
-                'label'         => esc_html__('Featured for software', 'mkarapuz'),
+                'key'           => 'KARAPUZ_casino_featured_for_software',
+                'label'         => esc_html__('Featured for software', 'mKARAPUZ_'),
                 'name'          => 'casino_featured_for_software',
                 'type'          => 'taxonomy',
                 'taxonomy'      => 'game-provider',
@@ -439,8 +439,8 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'           => 'KARAPUZcasino_fallback',
-                'label'         => esc_html__('Mobile casino fallback', 'mkarapuz'),
+                'key'           => 'KARAPUZ_casino_fallback',
+                'label'         => esc_html__('Mobile casino fallback', 'mKARAPUZ_'),
                 'name'          => 'casino_featured_fallback',
                 'type'          => 'post_object',
                 'post_type'     => 'casino',
@@ -451,8 +451,8 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'     => 'KARAPUZcasino_ad',
-                'label'   => esc_html__('Text ad', 'mkarapuz'),
+                'key'     => 'KARAPUZ_casino_ad',
+                'label'   => esc_html__('Text ad', 'mKARAPUZ_'),
                 'name'    => 'casino_text_ad',
                 'type'    => 'text',
                 'wrapper' => array (
@@ -461,8 +461,8 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'               => 'KARAPUZcasino_ad_url',
-                'label'             => esc_html__('Text ad URL', 'mkarapuz'),
+                'key'               => 'KARAPUZ_casino_ad_url',
+                'label'             => esc_html__('Text ad URL', 'mKARAPUZ_'),
                 'name'              => 'casino_text_ad_url',
                 'type'              => 'text',
                 'wrapper'           => array (
@@ -472,8 +472,8 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'     => 'KARAPUZcasino_new_text_ad',
-                'label'   => esc_html__('New text ad', 'mkarapuz'),
+                'key'     => 'KARAPUZ_casino_new_text_ad',
+                'label'   => esc_html__('New text ad', 'mKARAPUZ_'),
                 'name'    => 'casino_new_text_ad',
                 'type'    => 'text',
                 'wrapper' => array (
@@ -482,8 +482,8 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'           => 'KARAPUZcasino_skyscraper_banner',
-                'label'         => esc_html__('Skyscraper banner (220x500)', 'mkarapuz'),
+                'key'           => 'KARAPUZ_casino_skyscraper_banner',
+                'label'         => esc_html__('Skyscraper banner (220x500)', 'mKARAPUZ_'),
                 'name'          => 'casino_skyscraper_banner',
                 'type'          => 'image',
                 'wrapper'       => array(
@@ -495,8 +495,8 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'     => 'KARAPUZcasino_skyscraper_banner_url',
-                'label'   => esc_html__('Custom URL', 'mkarapuz'),
+                'key'     => 'KARAPUZ_casino_skyscraper_banner_url',
+                'label'   => esc_html__('Custom URL', 'mKARAPUZ_'),
                 'name'    => 'casino_skyscraper_banner_url',
                 'type'    => 'text',
                 'wrapper' => array (
@@ -505,8 +505,8 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'           => 'KARAPUZcasino_header_banner',
-                'label'         => esc_html__('Header banner (1280x80)', 'mkarapuz'),
+                'key'           => 'KARAPUZ_casino_header_banner',
+                'label'         => esc_html__('Header banner (1280x80)', 'mKARAPUZ_'),
                 'name'          => 'casino_header_banner',
                 'type'          => 'image',
                 'wrapper'       => array(
@@ -518,8 +518,8 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'     => 'KARAPUZcasino_header_banner_url',
-                'label'   => esc_html__('Custom URL', 'mkarapuz'),
+                'key'     => 'KARAPUZ_casino_header_banner_url',
+                'label'   => esc_html__('Custom URL', 'mKARAPUZ_'),
                 'name'    => 'casino_header_banner_url',
                 'type'    => 'text',
                 'wrapper' => array (
@@ -528,8 +528,8 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'           => 'KARAPUZcasino_mobile_banner',
-                'label'         => esc_html__('Mobile banner (450x300)', 'mkarapuz'),
+                'key'           => 'KARAPUZ_casino_mobile_banner',
+                'label'         => esc_html__('Mobile banner (450x300)', 'mKARAPUZ_'),
                 'name'          => 'casino_mobile_banner',
                 'type'          => 'image',
                 'wrapper'       => array(
@@ -541,8 +541,8 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'     => 'KARAPUZcasino_mobile_banner_url',
-                'label'   => esc_html__('Custom URL', 'mkarapuz'),
+                'key'     => 'KARAPUZ_casino_mobile_banner_url',
+                'label'   => esc_html__('Custom URL', 'mKARAPUZ_'),
                 'name'    => 'casino_mobile_banner_url',
                 'type'    => 'text',
                 'wrapper' => array (
@@ -551,8 +551,8 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'           => 'KARAPUZcasino_sidebar_banner_1',
-                'label'         => esc_html__('Sidebar banner #1 (160x945)', 'mkarapuz'),
+                'key'           => 'KARAPUZ_casino_sidebar_banner_1',
+                'label'         => esc_html__('Sidebar banner #1 (160x945)', 'mKARAPUZ_'),
                 'name'          => 'casino_sidebar_banner_1',
                 'type'          => 'image',
                 'wrapper'       => array(
@@ -564,8 +564,8 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'     => 'KARAPUZcasino_sidebar_banner_1_url',
-                'label'   => esc_html__('Custom URL', 'mkarapuz'),
+                'key'     => 'KARAPUZ_casino_sidebar_banner_1_url',
+                'label'   => esc_html__('Custom URL', 'mKARAPUZ_'),
                 'name'    => 'casino_sidebar_banner_1_url',
                 'type'    => 'text',
                 'wrapper' => array (
@@ -574,8 +574,8 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'           => 'KARAPUZcasino_sidebar_banner_2',
-                'label'         => esc_html__('Sidebar banner #2 (160x945)', 'mkarapuz'),
+                'key'           => 'KARAPUZ_casino_sidebar_banner_2',
+                'label'         => esc_html__('Sidebar banner #2 (160x945)', 'mKARAPUZ_'),
                 'name'          => 'casino_sidebar_banner_2',
                 'type'          => 'image',
                 'wrapper'       => array(
@@ -587,8 +587,8 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'     => 'KARAPUZcasino_sidebar_banner_2_url',
-                'label'   => esc_html__('Custom URL', 'mkarapuz'),
+                'key'     => 'KARAPUZ_casino_sidebar_banner_2_url',
+                'label'   => esc_html__('Custom URL', 'mKARAPUZ_'),
                 'name'    => 'casino_sidebar_banner_2_url',
                 'type'    => 'text',
                 'wrapper' => array (
@@ -597,8 +597,8 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'           => 'KARAPUZcasino_popup_banner',
-                'label'         => esc_html__('Popup banner (600x400)', 'mkarapuz'),
+                'key'           => 'KARAPUZ_casino_popup_banner',
+                'label'         => esc_html__('Popup banner (600x400)', 'mKARAPUZ_'),
                 'name'          => 'casino_popup_banner',
                 'type'          => 'image',
                 'wrapper'       => array(
@@ -610,8 +610,8 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'     => 'KARAPUZcasino_popup_banner_url',
-                'label'   => esc_html__('Custom URL', 'mkarapuz'),
+                'key'     => 'KARAPUZ_casino_popup_banner_url',
+                'label'   => esc_html__('Custom URL', 'mKARAPUZ_'),
                 'name'    => 'casino_popup_banner_url',
                 'type'    => 'text',
                 'wrapper' => array (
@@ -620,8 +620,8 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'           => 'KARAPUZcasino_slot_page_top_banner',
-                'label'         => esc_html__('Slot page top banner (1280x40)', 'mkarapuz'),
+                'key'           => 'KARAPUZ_casino_slot_page_top_banner',
+                'label'         => esc_html__('Slot page top banner (1280x40)', 'mKARAPUZ_'),
                 'name'          => 'casino_sidebar_banner_1',
                 'type'          => 'image',
                 'wrapper'       => array(
@@ -633,8 +633,8 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'     => 'KARAPUZcasino_slot_page_top_banner_url',
-                'label'   => esc_html__('Custom URL', 'mkarapuz'),
+                'key'     => 'KARAPUZ_casino_slot_page_top_banner_url',
+                'label'   => esc_html__('Custom URL', 'mKARAPUZ_'),
                 'name'    => 'casino_slot_page_banner_url',
                 'type'    => 'text',
                 'wrapper' => array (
@@ -661,48 +661,48 @@ if (function_exists('acf_add_local_field_group')):
 
     acf_add_local_field_group(array (
         'key'    => 'group_casino_bonus',
-        'title'  => esc_html__('Casino bonus', 'mkarapuz'),
+        'title'  => esc_html__('Casino bonus', 'mKARAPUZ_'),
         'fields' => array (
 
             array (
-                'key'     => 'KARAPUZcasino_bonus_code',
-                'label'   => esc_html__('Bonus code', 'mkarapuz'),
+                'key'     => 'KARAPUZ_casino_bonus_code',
+                'label'   => esc_html__('Bonus code', 'mKARAPUZ_'),
                 'name'    => 'casino_bonus_code',
                 'type'    => 'text',
             ),
 
             array (
-                'key'     => 'KARAPUZcasino_header_bonus_text',
-                'label'   => esc_html__('Header Bonus Text', 'mkarapuz'),
+                'key'     => 'KARAPUZ_casino_header_bonus_text',
+                'label'   => esc_html__('Header Bonus Text', 'mKARAPUZ_'),
                 'name'    => 'casino_header_bonus_text',
                 'type'    => 'text',
             ),
 
             array (
-                'key'     => 'KARAPUZcasino_second_bonus_text',
-                'label'   => esc_html__('Bonus code', 'mkarapuz'),
+                'key'     => 'KARAPUZ_casino_second_bonus_text',
+                'label'   => esc_html__('Bonus code', 'mKARAPUZ_'),
                 'name'    => 'casino_second_bonus_text',
                 'type'    => 'text',
             ),
 
             array (
-                'key'     => 'KARAPUZcasino_payoff_text',
-                'label'   => esc_html__('Payoff Text', 'mkarapuz'),
+                'key'     => 'KARAPUZ_casino_payoff_text',
+                'label'   => esc_html__('Payoff Text', 'mKARAPUZ_'),
                 'name'    => 'casino_payoff_text',
                 'type'    => 'text',
             ),
 
             array(
-                'key'       => 'KARAPUZcasino_basic_bonuses_tab',
-                'label'     => esc_html__('Basic bonuses', 'mkarapuz'),
+                'key'       => 'KARAPUZ_casino_basic_bonuses_tab',
+                'label'     => esc_html__('Basic bonuses', 'mKARAPUZ_'),
                 'name'      => 'casino_basic_bonuses_tab',
                 'type'      => 'tab',
                 'placement' => 'top',
             ),
 
             array (
-                'key'     => 'KARAPUZcasino_basic_deposit_bonus_amount',
-                'label'   => esc_html__('Deposit bonus amount', 'mkarapuz'),
+                'key'     => 'KARAPUZ_casino_basic_deposit_bonus_amount',
+                'label'   => esc_html__('Deposit bonus amount', 'mKARAPUZ_'),
                 'name'    => 'casino_deposit_bonus_amount',
                 'type'    => 'text',
                 'wrapper' => array (
@@ -711,8 +711,8 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'     => 'KARAPUZcasino_basic_deposit_bonus_percent',
-                'label'   => esc_html__('Deposit bonus percent', 'mkarapuz'),
+                'key'     => 'KARAPUZ_casino_basic_deposit_bonus_percent',
+                'label'   => esc_html__('Deposit bonus percent', 'mKARAPUZ_'),
                 'name'    => 'casino_deposit_bonus_percent',
                 'type'    => 'text',
                 'wrapper' => array (
@@ -721,8 +721,8 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'     => 'KARAPUZcasino_basic_deposit_bonus_free_spins',
-                'label'   => esc_html__('Deposit bonus free spins', 'mkarapuz'),
+                'key'     => 'KARAPUZ_casino_basic_deposit_bonus_free_spins',
+                'label'   => esc_html__('Deposit bonus free spins', 'mKARAPUZ_'),
                 'name'    => 'casino_deposit_bonus_free_spins',
                 'type'    => 'text',
                 'wrapper' => array (
@@ -731,8 +731,8 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'     => 'KARAPUZcasino_basic_no_deposit_bonus_amount',
-                'label'   => esc_html__('No deposit bonus amount', 'mkarapuz'),
+                'key'     => 'KARAPUZ_casino_basic_no_deposit_bonus_amount',
+                'label'   => esc_html__('No deposit bonus amount', 'mKARAPUZ_'),
                 'name'    => 'casino_no_deposit_bonus_amount',
                 'type'    => 'text',
                 'wrapper' => array (
@@ -741,8 +741,8 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'     => 'KARAPUZcasino_basic_no_deposit_bonus_free_spins',
-                'label'   => esc_html__('No deposit bonus free spins', 'mkarapuz'),
+                'key'     => 'KARAPUZ_casino_basic_no_deposit_bonus_free_spins',
+                'label'   => esc_html__('No deposit bonus free spins', 'mKARAPUZ_'),
                 'name'    => 'casino_no_deposit_bonus_free_spins',
                 'type'    => 'text',
                 'wrapper' => array (
@@ -751,8 +751,8 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array (
-                'key'     => 'KARAPUZcasino_basic_no_deposit_bonus_steps',
-                'label'   => esc_html__('No deposit bonus steps', 'mkarapuz'),
+                'key'     => 'KARAPUZ_casino_basic_no_deposit_bonus_steps',
+                'label'   => esc_html__('No deposit bonus steps', 'mKARAPUZ_'),
                 'name'    => 'casino_no_deposit_bonus_free_spins',
                 'type'    => 'textarea',
                 'wrapper' => array (
@@ -761,51 +761,51 @@ if (function_exists('acf_add_local_field_group')):
             ),
 
             array(
-                'key' => 'KARAPUZcasino_exclusive_bonuses_tab',
-                'label' => esc_html__('Exclusive bonuses', 'mkarapuz'),
+                'key' => 'KARAPUZ_casino_exclusive_bonuses_tab',
+                'label' => esc_html__('Exclusive bonuses', 'mKARAPUZ_'),
                 'name' => 'casino_exclusive_bonuses_tab',
                 'type' => 'tab',
                 'placement' => 'top',
             ),
 
             array (
-                'key'   => 'KARAPUZcasino_exclusive_deposit_bonus_amount',
-                'label' => esc_html__('Deposit bonus amount', 'mkarapuz'),
+                'key'   => 'KARAPUZ_casino_exclusive_deposit_bonus_amount',
+                'label' => esc_html__('Deposit bonus amount', 'mKARAPUZ_'),
                 'name'  => 'casino_exclusive_deposit_bonus_amount',
                 'type'  => 'text',
             ),
 
             array (
-                'key'   => 'KARAPUZcasino_exclusive_deposit_bonus_percent',
-                'label' => esc_html__('Deposit bonus percent', 'mkarapuz'),
+                'key'   => 'KARAPUZ_casino_exclusive_deposit_bonus_percent',
+                'label' => esc_html__('Deposit bonus percent', 'mKARAPUZ_'),
                 'name'  => 'casino_exclusive_deposit_bonus_percent',
                 'type'  => 'text',
             ),
 
             array (
-                'key'   => 'KARAPUZcasino_exclusive_deposit_bonus_free_spins',
-                'label' => esc_html__('Deposit bonus free spins', 'mkarapuz'),
+                'key'   => 'KARAPUZ_casino_exclusive_deposit_bonus_free_spins',
+                'label' => esc_html__('Deposit bonus free spins', 'mKARAPUZ_'),
                 'name'  => 'casino_exclusive_deposit_bonus_free_spins',
                 'type'  => 'text',
             ),
 
             array (
-                'key'   => 'KARAPUZcasino_exclusive_no_deposit_bonus_amount',
-                'label' => esc_html__('No deposit bonus amount', 'mkarapuz'),
+                'key'   => 'KARAPUZ_casino_exclusive_no_deposit_bonus_amount',
+                'label' => esc_html__('No deposit bonus amount', 'mKARAPUZ_'),
                 'name'  => 'casino_exclusive_no_deposit_bonus_amount',
                 'type'  => 'text',
             ),
 
             array (
-                'key'   => 'KARAPUZcasino_exclusive_no_deposit_bonus_free_spins',
-                'label' => esc_html__('No deposit bonus free spins', 'mkarapuz'),
+                'key'   => 'KARAPUZ_casino_exclusive_no_deposit_bonus_free_spins',
+                'label' => esc_html__('No deposit bonus free spins', 'mKARAPUZ_'),
                 'name'  => 'casino_exclusive_no_deposit_bonus_free_spins',
                 'type'  => 'text',
             ),
 
             array (
-                'key'   => 'KARAPUZcasino_exclusive_no_deposit_bonus_steps',
-                'label' => esc_html__('No deposit bonus steps', 'mkarapuz'),
+                'key'   => 'KARAPUZ_casino_exclusive_no_deposit_bonus_steps',
+                'label' => esc_html__('No deposit bonus steps', 'mKARAPUZ_'),
                 'name'  => 'casino_exclusive_no_deposit_bonus_free_spins',
                 'type'  => 'textarea',
             ),
@@ -828,10 +828,10 @@ if (function_exists('acf_add_local_field_group')):
 
     acf_add_local_field_group(array (
         'key'    => 'group_casino_game_provider',
-        'title'  => esc_html__('Game Providers', 'mkarapuz'),
+        'title'  => esc_html__('Game Providers', 'mKARAPUZ_'),
         'fields' => array (
             array (
-                'key'           => 'KARAPUZcasino_game_provider',
+                'key'           => 'KARAPUZ_casino_game_provider',
                 'name'          => 'casino_game_provider',
                 'type'          => 'taxonomy',
                 'taxonomy'      => 'game-provider',
@@ -857,10 +857,10 @@ if (function_exists('acf_add_local_field_group')):
 
     acf_add_local_field_group(array (
         'key'    => 'group_casino_logotype',
-        'title'  => esc_html__('Logotype', 'mkarapuz'),
+        'title'  => esc_html__('Logotype', 'mKARAPUZ_'),
         'fields' => array (
             array (
-                'key'           => 'KARAPUZcasino_logotype',
+                'key'           => 'KARAPUZ_casino_logotype',
                 'name'          => 'casino_logotype',
                 'type'          => 'image',
                 'return_format' => 'array',
@@ -885,10 +885,10 @@ if (function_exists('acf_add_local_field_group')):
 
     acf_add_local_field_group(array (
         'key'    => 'group_casino_screenshots_gallery',
-        'title'  => esc_html__('Screenshots', 'mkarapuz'),
+        'title'  => esc_html__('Screenshots', 'mKARAPUZ_'),
         'fields' => array (
             array (
-                'key'           => 'KARAPUZcasino_screenshots_gallery',
+                'key'           => 'KARAPUZ_casino_screenshots_gallery',
                 'name'          => 'casino_screenshots_gallery',
                 'type'          => 'gallery',
             ),
@@ -911,10 +911,10 @@ if (function_exists('acf_add_local_field_group')):
 
     acf_add_local_field_group(array (
         'key'    => 'group_news_author',
-        'title'  => esc_html__('News author', 'mkarapuz'),
+        'title'  => esc_html__('News author', 'mKARAPUZ_'),
         'fields' => array (
             array (
-                'key'           => 'KARAPUZnews_author',
+                'key'           => 'KARAPUZ_news_author',
                 'name'          => 'news_author',
                 'type'          => 'user',
                 'return_format' => 'array',
@@ -942,13 +942,13 @@ endif;
 if (function_exists('acf_add_local_field_group')):
 
     acf_add_local_field_group(array(
-        'key'                   => 'KARAPUZslot_related_images',
+        'key'                   => 'KARAPUZ_slot_related_images',
         'title'                 => 'Related images',
         'fields'                => array(
             array(
-                'key'               => 'KARAPUZslot_main_images',
-                'label'             => esc_html__('Slot Images', 'mkarapuz'),
-                'name'              => 'KARAPUZslot_main_images_group',
+                'key'               => 'KARAPUZ_slot_main_images',
+                'label'             => esc_html__('Slot Images', 'mKARAPUZ_'),
+                'name'              => 'KARAPUZ_slot_main_images_group',
                 'type'              => 'group',
                 'instructions'      => '',
                 'required'          => 0,
@@ -961,9 +961,9 @@ if (function_exists('acf_add_local_field_group')):
                 'layout'            => 'block',
                 'sub_fields'        => array(
                                             array(
-                                                'key'               => 'KARAPUZslot_art',
-                                                'label'             => esc_html__('Slot Art', 'mkarapuz'),
-                                                'name'              => 'KARAPUZslot_art_images',
+                                                'key'               => 'KARAPUZ_slot_art',
+                                                'label'             => esc_html__('Slot Art', 'mKARAPUZ_'),
+                                                'name'              => 'KARAPUZ_slot_art_images',
                                                 'type'              => 'group',
                                                 'instructions'      => '',
                                                 'required'          => 0,
@@ -976,9 +976,9 @@ if (function_exists('acf_add_local_field_group')):
                                                 'layout'            => 'block',
                                                 'sub_fields'        => array(
                                                                         array(
-                                                                            'key'               => 'KARAPUZslot_bg',
-                                                                            'label'             => esc_html__('Slot background (1140x900 or bigger)', 'mkarapuz'),
-                                                                            'name'              => 'KARAPUZslot_bg_image',
+                                                                            'key'               => 'KARAPUZ_slot_bg',
+                                                                            'label'             => esc_html__('Slot background (1140x900 or bigger)', 'mKARAPUZ_'),
+                                                                            'name'              => 'KARAPUZ_slot_bg_image',
                                                                             'type'              => 'image',
                                                                             'instructions'      => '',
                                                                             'required'          => 0,
@@ -1000,9 +1000,9 @@ if (function_exists('acf_add_local_field_group')):
                                                                             'mime_types'        => '',
                                                                         ),
                                                                         array(
-                                                                            'key'               => 'KARAPUZslot_promo_art',
-                                                                            'label'             => esc_html__('Slot promo art', 'mkarapuz'),
-                                                                            'name'              => 'KARAPUZslot_promo_art_image',
+                                                                            'key'               => 'KARAPUZ_slot_promo_art',
+                                                                            'label'             => esc_html__('Slot promo art', 'mKARAPUZ_'),
+                                                                            'name'              => 'KARAPUZ_slot_promo_art_image',
                                                                             'type'              => 'image',
                                                                             'instructions'      => '',
                                                                             'required'          => 0,
@@ -1026,9 +1026,9 @@ if (function_exists('acf_add_local_field_group')):
                                                 ),
                                             ),
                     array(
-                        'key'               => 'KARAPUZslot_screenshots',
-                        'label'             => esc_html__('Slot Screenshots', 'mkarapuz'),
-                        'name'              => 'KARAPUZslot_screenshots_gallery',
+                        'key'               => 'KARAPUZ_slot_screenshots',
+                        'label'             => esc_html__('Slot Screenshots', 'mKARAPUZ_'),
+                        'name'              => 'KARAPUZ_slot_screenshots_gallery',
                         'type'              => 'gallery',
                         'instructions'      => '',
                         'required'          => 0,
@@ -1074,12 +1074,12 @@ if (function_exists('acf_add_local_field_group')):
 
     acf_add_local_field_group(array(
         'key'                   => 'group_slot_details',
-        'title'                 => esc_html__('Slot Details', 'mkarapuz'),
+        'title'                 => esc_html__('Slot Details', 'mKARAPUZ_'),
         'fields'                => array(
                         array(
-                            'key'                   => 'KARAPUZfeatured_casino_info',
-                            'label'                 => esc_html__('Currrent featured casino', 'mkarapuz'),
-                            'name'                  => 'KARAPUZfeatured_casino_info_msg',
+                            'key'                   => 'KARAPUZ_featured_casino_info',
+                            'label'                 => esc_html__('Currrent featured casino', 'mKARAPUZ_'),
+                            'name'                  => 'KARAPUZ_featured_casino_info_msg',
                             'type'                  => 'message',
                             'prefix'                => '',
                             'instructions'          => '',
@@ -1095,9 +1095,9 @@ if (function_exists('acf_add_local_field_group')):
                             'esc_html'              => 0,
                         ),
                         array(
-                            'key'                   => 'KARAPUZslots_sizes',
-                            'label'                 => esc_html__('Slot width and height', 'mkarapuz'),
-                            'name'                  => 'KARAPUZslot_width_group',
+                            'key'                   => 'KARAPUZ_slots_sizes',
+                            'label'                 => esc_html__('Slot width and height', 'mKARAPUZ_'),
+                            'name'                  => 'KARAPUZ_slot_width_group',
                             'type'                  => 'group',
                             'instructions'          => '',
                             'required'              => 0,
@@ -1110,9 +1110,9 @@ if (function_exists('acf_add_local_field_group')):
                             'layout'                => 'block',
                             'sub_fields'            => array(
                                                         array(
-                                                            'key'                   => 'KARAPUZslot_width',
-                                                            'label'                 => esc_html__('Width', 'mkarapuz'),
-                                                            'name'                  => 'KARAPUZslot_width_text',
+                                                            'key'                   => 'KARAPUZ_slot_width',
+                                                            'label'                 => esc_html__('Width', 'mKARAPUZ_'),
+                                                            'name'                  => 'KARAPUZ_slot_width_text',
                                                             'type'                  => 'text',
                                                             'instructions'          => '',
                                                             'required'              => 0,
@@ -1129,9 +1129,9 @@ if (function_exists('acf_add_local_field_group')):
                                                             'maxlength'             => '',
                                                         ),
                                                         array(
-                                                            'key'                   => 'KARAPUZslot_height',
-                                                            'label'                 => esc_html__('Height', 'mkarapuz'),
-                                                            'name'                  => 'KARAPUZslot_height_text',
+                                                            'key'                   => 'KARAPUZ_slot_height',
+                                                            'label'                 => esc_html__('Height', 'mKARAPUZ_'),
+                                                            'name'                  => 'KARAPUZ_slot_height_text',
                                                             'type'                  => 'text',
                                                             'instructions'          => '',
                                                             'required'              => 0,
@@ -1149,16 +1149,16 @@ if (function_exists('acf_add_local_field_group')):
                                                         ),
                                                     ),
                                                     array(
-                                                        'key'   => 'KARAPUZslot_payoff',
+                                                        'key'   => 'KARAPUZ_slot_payoff',
                                                         'label' => 'Slot Payoff',
-                                                        'name'  => 'KARAPUZslot_payoff_text',
+                                                        'name'  => 'KARAPUZ_slot_payoff_text',
                                                         'type'  => 'text',
                                                     ),
                         ),
                         array(
-                            'key'               => 'KARAPUZslot_game_source',
-                            'label'             => esc_html__('Slot Game Source', 'mkarapuz'),
-                            'name'              => 'KARAPUZslot_game_source_textarea',
+                            'key'               => 'KARAPUZ_slot_game_source',
+                            'label'             => esc_html__('Slot Game Source', 'mKARAPUZ_'),
+                            'name'              => 'KARAPUZ_slot_game_source_textarea',
                             'type'              => 'textarea',
                             'instructions'      => '',
                             'required'          => 1,
@@ -1175,9 +1175,9 @@ if (function_exists('acf_add_local_field_group')):
                             'maxlength'         => '',
                         ),
                         array(
-                            'key'           => 'KARAPUZslot_rating',
-                            'label'         => esc_html__('Slot Rating', 'mkarapuz'),
-                            'name'          => 'KARAPUZslot_rating_select',
+                            'key'           => 'KARAPUZ_slot_rating',
+                            'label'         => esc_html__('Slot Rating', 'mKARAPUZ_'),
+                            'name'          => 'KARAPUZ_slot_rating_select',
                             'type'          => 'select',
                             'choices'       => array(
                                                     '1' => '0.5 stars',
@@ -1198,15 +1198,15 @@ if (function_exists('acf_add_local_field_group')):
                             'return_format' => 'value',
                         ),
                         array(
-                            'key'   => 'KARAPUZslot_payoff',
-                            'label' => esc_html__('Slot Payoff', 'mkarapuz'),
-                            'name'  => 'KARAPUZslot_payoff_text',
+                            'key'   => 'KARAPUZ_slot_payoff',
+                            'label' => esc_html__('Slot Payoff', 'mKARAPUZ_'),
+                            'name'  => 'KARAPUZ_slot_payoff_text',
                             'type'  => 'text',
                         ),
                         array(
-                            'key'                   => 'KARAPUZslots_main_features',
-                            'label'                 => esc_html__('Main features', 'mkarapuz'),
-                            'name'                  => 'KARAPUZslots_main_features_group',
+                            'key'                   => 'KARAPUZ_slots_main_features',
+                            'label'                 => esc_html__('Main features', 'mKARAPUZ_'),
+                            'name'                  => 'KARAPUZ_slots_main_features_group',
                             'type'                  => 'group',
                             'instructions'          => '',
                             'required'              => 0,
@@ -1219,9 +1219,9 @@ if (function_exists('acf_add_local_field_group')):
                             'layout'                => 'block',
                             'sub_fields'            => array(
                                                         array(
-                                                            'key'           => 'KARAPUZreturn_to_player',
+                                                            'key'           => 'KARAPUZ_return_to_player',
                                                             'label'         => 'Return to player, %',
-                                                            'name'          => 'KARAPUZreturn_to_player_text',
+                                                            'name'          => 'KARAPUZ_return_to_player_text',
                                                             'type'          => 'text',
                                                             'wrapper'       => array(
                                                                                 'width' => '25',
@@ -1231,9 +1231,9 @@ if (function_exists('acf_add_local_field_group')):
                                                             'placeholder'   => '100',
                                                         ),
                                                         array(
-                                                            'key'           => 'KARAPUZimport_min_max',
+                                                            'key'           => 'KARAPUZ_import_min_max',
                                                             'label'         => 'Import Min-Max, &euro;',
-                                                            'name'          => 'KARAPUZimport_min_max_text',
+                                                            'name'          => 'KARAPUZ_import_min_max_text',
                                                             'type'          => 'text',
                                                             'wrapper'       => array(
                                                                                     'width' => '25',
@@ -1243,9 +1243,9 @@ if (function_exists('acf_add_local_field_group')):
                                                             'placeholder'   => '0.10-200',
                                                         ),
                                                         array(
-                                                            'key'       => 'KARAPUZbet_lines',
+                                                            'key'       => 'KARAPUZ_bet_lines',
                                                             'label'     => 'Slot bet lines',
-                                                            'name'      => 'KARAPUZbet_lines_text',
+                                                            'name'      => 'KARAPUZ_bet_lines_text',
                                                             'type'      => 'text',
                                                             'wrapper'   => array(
                                                                                 'width' => '25',
@@ -1254,9 +1254,9 @@ if (function_exists('acf_add_local_field_group')):
                                                                             ),
                                                         ),
                                                         array(
-                                                            'key'       => 'KARAPUZrollers_lines',
+                                                            'key'       => 'KARAPUZ_rollers_lines',
                                                             'label'     => 'Slot Rulli * Linee',
-                                                            'name'      => 'KARAPUZrollers_lines_text',
+                                                            'name'      => 'KARAPUZ_rollers_lines_text',
                                                             'type'      => 'text',
                                                             'wrapper'   => array(
                                                                             'width' => '25',
@@ -1267,9 +1267,9 @@ if (function_exists('acf_add_local_field_group')):
                                                     ),
                         ),
                         array(
-                            'key'       => 'KARAPUZblockquote',
-                            'label'     => esc_html__('Blockquote', 'mkarapuz'),
-                            'name'      => 'KARAPUZblockquote_textarea',
+                            'key'       => 'KARAPUZ_blockquote',
+                            'label'     => esc_html__('Blockquote', 'mKARAPUZ_'),
+                            'name'      => 'KARAPUZ_blockquote_textarea',
                             'type'      => 'textarea',
                             'wrapper'   => array(
                                                 'width' => '100',
@@ -1278,9 +1278,9 @@ if (function_exists('acf_add_local_field_group')):
                                             ),
                         ),
                         array(
-                            'key'                   => 'KARAPUZtechnical_judgment',
-                            'label'                 => esc_html__('Technical Judgment', 'mkarapuz'),
-                            'name'                  => 'KARAPUZtechnical_judgment_group',
+                            'key'                   => 'KARAPUZ_technical_judgment',
+                            'label'                 => esc_html__('Technical Judgment', 'mKARAPUZ_'),
+                            'name'                  => 'KARAPUZ_technical_judgment_group',
                             'type'                  => 'group',
                             'instructions'          => '',
                             'required'              => 0,
@@ -1293,9 +1293,9 @@ if (function_exists('acf_add_local_field_group')):
                             'layout'                => 'block',
                             'sub_fields'            => array(
                                                         array(
-                                                            'key'                   => 'KARAPUZvolatility',
+                                                            'key'                   => 'KARAPUZ_volatility',
                                                             'label'                 => 'Volatility',
-                                                            'name'                  => 'KARAPUZvolatility_range',
+                                                            'name'                  => 'KARAPUZ_volatility_range',
                                                             'type'                  => 'range',
                                                             'instructions'          => '',
                                                             'required'              => 0,
@@ -1313,9 +1313,9 @@ if (function_exists('acf_add_local_field_group')):
                                                             'append'                => '',
                                                         ),
                                                         array(
-                                                            'key'                   => 'KARAPUZspin_win_frequency',
+                                                            'key'                   => 'KARAPUZ_spin_win_frequency',
                                                             'label'                 => 'Spin winning frequency',
-                                                            'name'                  => 'KARAPUZspin_win_frequency_range',
+                                                            'name'                  => 'KARAPUZ_spin_win_frequency_range',
                                                             'type'                  => 'range',
                                                             'instructions'          => '',
                                                             'required'              => 0,
@@ -1333,9 +1333,9 @@ if (function_exists('acf_add_local_field_group')):
                                                             'append'                => '',
                                                         ),
                                                         array(
-                                                            'key' => 'KARAPUZextra_features',
+                                                            'key' => 'KARAPUZ_extra_features',
                                                             'label' => 'Extra features',
-                                                            'name' => 'KARAPUZextra_features_range',
+                                                            'name' => 'KARAPUZ_extra_features_range',
                                                             'type' => 'range',
                                                             'instructions' => '',
                                                             'required' => 0,
@@ -1355,9 +1355,9 @@ if (function_exists('acf_add_local_field_group')):
                                                     ),
                         ),
                         array(
-                            'key'               => 'KARAPUZreasons_to_play',
-                            'label'             => esc_html__('Reasons to play', 'mkarapuz'),
-                            'name'              => 'KARAPUZreasons_to_play',
+                            'key'               => 'KARAPUZ_reasons_to_play',
+                            'label'             => esc_html__('Reasons to play', 'mKARAPUZ_'),
+                            'name'              => 'KARAPUZ_reasons_to_play',
                             'type'              => 'repeater',
                             'instructions'      => '',
                             'required'          => 0,
@@ -1374,9 +1374,9 @@ if (function_exists('acf_add_local_field_group')):
                             'button_label'      => 'New reason to play',
                             'sub_fields' => array(
                                 array(
-                                    'key'                   => 'KARAPUZreasons_to_play_item',
+                                    'key'                   => 'KARAPUZ_reasons_to_play_item',
                                     'label'                 => 'List of reasons to play',
-                                    'name'                  => 'KARAPUZreasons_to_play_text',
+                                    'name'                  => 'KARAPUZ_reasons_to_play_text',
                                     'type'                  => 'text',
                                     'instructions'          => '',
                                     'required'              => 0,
@@ -1395,9 +1395,9 @@ if (function_exists('acf_add_local_field_group')):
                             ),
                         ),
                         array(
-                            'key'                   => 'KARAPUZbonus_game',
-                            'label'                 => esc_html__('Bonus Game', 'mkarapuz'),
-                            'name'                  => 'KARAPUZbonus_game_radio',
+                            'key'                   => 'KARAPUZ_bonus_game',
+                            'label'                 => esc_html__('Bonus Game', 'mKARAPUZ_'),
+                            'name'                  => 'KARAPUZ_bonus_game_radio',
                             'type'                  => 'radio',
                             'instructions'          => '',
                             'required'              => 0,
@@ -1420,9 +1420,9 @@ if (function_exists('acf_add_local_field_group')):
                             'return_format'         => 'value',
                         ),
                         array(
-                            'key'                   => 'KARAPUZfree_spin',
-                            'label'                 => esc_html__('Free Spin', 'mkarapuz'),
-                            'name'                  => 'KARAPUZfree_spin_radio',
+                            'key'                   => 'KARAPUZ_free_spin',
+                            'label'                 => esc_html__('Free Spin', 'mKARAPUZ_'),
+                            'name'                  => 'KARAPUZ_free_spin_radio',
                             'type'                  => 'radio',
                             'instructions'          => '',
                             'required'              => 0,
@@ -1445,9 +1445,9 @@ if (function_exists('acf_add_local_field_group')):
                             'return_format'         => 'value',
                         ),
                         array(
-                            'key'                   => 'KARAPUZjackpot',
-                            'label'                 => esc_html__('Jackpot', 'mkarapuz'),
-                            'name'                  => 'KARAPUZjackpot_radio',
+                            'key'                   => 'KARAPUZ_jackpot',
+                            'label'                 => esc_html__('Jackpot', 'mKARAPUZ_'),
+                            'name'                  => 'KARAPUZ_jackpot_radio',
                             'type'                  => 'radio',
                             'instructions'          => '',
                             'required'              => 0,
@@ -1470,9 +1470,9 @@ if (function_exists('acf_add_local_field_group')):
                             'return_format'         => 'value',
                         ),
                         array(
-                            'key'                   => 'KARAPUZmoltiplicatore',
-                            'label'                 => esc_html__('Moltiplicatore', 'mkarapuz'),
-                            'name'                  => 'KARAPUZmoltiplicatore_radio',
+                            'key'                   => 'KARAPUZ_moltiplicatore',
+                            'label'                 => esc_html__('Moltiplicatore', 'mKARAPUZ_'),
+                            'name'                  => 'KARAPUZ_moltiplicatore_radio',
                             'type'                  => 'radio',
                             'instructions'          => '',
                             'required'              => 0,
@@ -1495,9 +1495,9 @@ if (function_exists('acf_add_local_field_group')):
                             'return_format'         => 'value',
                         ),
                         array(
-                            'key'                   => 'KARAPUZbrandizzato',
-                            'label'                 => esc_html__('Brandizzato', 'mkarapuz'),
-                            'name'                  => 'KARAPUZbrandizzato_radio',
+                            'key'                   => 'KARAPUZ_brandizzato',
+                            'label'                 => esc_html__('Brandizzato', 'mKARAPUZ_'),
+                            'name'                  => 'KARAPUZ_brandizzato_radio',
                             'type'                  => 'radio',
                             'instructions'          => '',
                             'required'              => 0,
@@ -1520,9 +1520,9 @@ if (function_exists('acf_add_local_field_group')):
                             'return_format'         => 'value',
                         ),
                         array(
-                            'key'                   => 'KARAPUZin_italia',
-                            'label'                 => esc_html__('In Italia', 'mkarapuz'),
-                            'name'                  => 'KARAPUZin_italia_radio',
+                            'key'                   => 'KARAPUZ_in_italia',
+                            'label'                 => esc_html__('In Italia', 'mKARAPUZ_'),
+                            'name'                  => 'KARAPUZ_in_italia_radio',
                             'type'                  => 'radio',
                             'instructions'          => '',
                             'required'              => 0,
@@ -1545,9 +1545,9 @@ if (function_exists('acf_add_local_field_group')):
                             'return_format'         => 'value',
                         ),
                         array(
-                            'key'       => 'KARAPUZslot_theme',
-                            'label'     => esc_html__('Slot theme', 'mkarapuz'),
-                            'name'      => 'KARAPUZslot_theme_text',
+                            'key'       => 'KARAPUZ_slot_theme',
+                            'label'     => esc_html__('Slot theme', 'mKARAPUZ_'),
+                            'name'      => 'KARAPUZ_slot_theme_text',
                             'type'      => 'text',
                             'wrapper'   => array(
                                             'width' => '',
@@ -1556,9 +1556,9 @@ if (function_exists('acf_add_local_field_group')):
                                         ),
                         ),
                         array(
-                            'key'       => 'KARAPUZwebsite_url',
-                            'label'     => esc_html__('Website URL', 'mkarapuz'),
-                            'name'      => 'KARAPUZKARAPUZwebsite_url_text',
+                            'key'       => 'KARAPUZ_website_url',
+                            'label'     => esc_html__('Website URL', 'mKARAPUZ_'),
+                            'name'      => 'KARAPUZ_KARAPUZ_website_url_text',
                             'type'      => 'url',
                             'wrapper'   => array(
                                                 'width' => '',
@@ -1567,9 +1567,9 @@ if (function_exists('acf_add_local_field_group')):
                                             ),
                         ),
                         array(
-                            'key'       => 'KARAPUZwebsite',
-                            'label'     => esc_html__('Website Name', 'mkarapuz'),
-                            'name'      => 'KARAPUZKARAPUZwebsite_text',
+                            'key'       => 'KARAPUZ_website',
+                            'label'     => esc_html__('Website Name', 'mKARAPUZ_'),
+                            'name'      => 'KARAPUZ_KARAPUZ_website_text',
                             'type'      => 'text',
                             'wrapper'   => array(
                                                 'width' => '',
@@ -1578,9 +1578,9 @@ if (function_exists('acf_add_local_field_group')):
                                             ),
                         ),
                         array(
-                            'key'       => 'KARAPUZwebsite',
-                            'label'     => esc_html__('Website Name', 'mkarapuz'),
-                            'name'      => 'KARAPUZKARAPUZwebsite_text',
+                            'key'       => 'KARAPUZ_website',
+                            'label'     => esc_html__('Website Name', 'mKARAPUZ_'),
+                            'name'      => 'KARAPUZ_KARAPUZ_website_text',
                             'type'      => 'text',
                             'wrapper'   => array(
                                                 'width' => '',
@@ -1589,9 +1589,9 @@ if (function_exists('acf_add_local_field_group')):
                                             ),
                         ),
                         array(
-                            'key'               => 'KARAPUZslot_release_date',
-                            'label'             => esc_html__('Slot release date', 'mkarapuz'),
-                            'name'              => 'KARAPUZslot_release_date_picker',
+                            'key'               => 'KARAPUZ_slot_release_date',
+                            'label'             => esc_html__('Slot release date', 'mKARAPUZ_'),
+                            'name'              => 'KARAPUZ_slot_release_date_picker',
                             'type'              => 'date_picker',
                             'instructions'      => '',
                             'required'          => 0,

@@ -31,17 +31,16 @@
 						'menu_class'     => 'kz-top-bar-menu',
 					) ); ?>
                 </div>
-                <div class="hidden-xs col-sm-3 kz-wishlist pull-right"><a href="#">Избранное</a></div>
+                <div class="hidden-xs col-sm-3 kz-wishlist pull-right"><?php echo do_shortcode('[ti_wishlist_products_counter]'); ?></div>
             </div>
         </div>
     </div>
-    <div class="highlight-line"></div>
     <header id="masthead" class="site-header container-fluid">
         <div class="container kz-primary-bar">
             <div class="row">
-                <div class="col-xs-12 col-sm-7 kz-header-holder">
+                <div class="col-xs-12 col-sm-8 kz-header-holder">
                     <div class="row">
-                        <div class="col-sm-6 kz-logo-wrap">
+                        <div class="col-sm-7 col-md-6 kz-logo-wrap">
                             <a href="/" title="Интернет-магазин MKarapuz">
                                 <div class="kz-logo">
                                     <img src="<?php echo KARAPUZ_THEME_URI . '/assets/images/logo1.png' ?>"
@@ -54,7 +53,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-sm-6 kz-header-contacts">
+                        <div class="col-sm-5 col-md-6 kz-header-contacts">
                             <div class="kz-contacts-title-holder">
                                 <div class="kz-contacts-title">Call-центр:</div>
                                 <div class="kz-contacts-time">C 9:00 до 21:00</div>
@@ -75,17 +74,32 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-5 kz-right">
+                <div class="col-xs-12 col-sm-4 kz-right">
                     <div class="kz-right-holder">
+                        <div class="kz-cart">
+                            <a class="cart-contents" href="<?php echo wc_get_cart_url(); ?>"
+                               title="<?php _e( 'Просмотреть что в корзине' ); ?>">
+                                <span class="kz-cart-icon">
+                                    <img src="<?php echo KARAPUZ_IMAGES . '/Cart.png'; ?>" alt="cart">
+                                </span>
+                                <span class="kz-cart-count">
+                                    <?php $cart_count_content = WC()->cart->get_cart_contents_count();
+
+	                                    echo ( $cart_count_content === 0 ) ? "" : $cart_count_content; ?>
+                                </span>
+                                <span class="kz-cart-title">Корзина</span>
+                            </a>
+                        </div>
                         <div class="kz-search">
 							<?php echo do_shortcode( '[aws_search_form]' ); ?>
                         </div>
-                        <div class="kz-cart">
+
+                        <div class="kz-mini-cart">
 							<?php woocommerce_mini_cart(); ?>
                         </div>
                     </div>
                     <div class="img-wrap">
-                        <img src="<?php echo KARAPUZ_THEME_URI . '/assets/images/07.png'; ?>" alt="bird">
+                        <img src="<?php echo KARAPUZ_IMAGES . '/07.png'; ?>" alt="bird">
                     </div>
                 </div>
             </div>

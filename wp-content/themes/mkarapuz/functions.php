@@ -41,7 +41,7 @@
 	 * @since 1.0
 	 */
 	require_once( KARAPUZ_FRAMEWORK_DIR . DS . 'class-post-types.php' );
-	require_once( KARAPUZ_FRAMEWORK_DIR . DS . 'class-sgo-init.php' );
+	require_once( KARAPUZ_FRAMEWORK_DIR . DS . 'class-mkarapuz-init.php' );
 	require_once( KARAPUZ_FRAMEWORK_DIR . DS . 'acf-fields-init.php' );
 
 	/**
@@ -50,12 +50,31 @@
 	 * version 4.0
 	 */
 
-	function theme_add_bootstrap() {
+	function kz_theme_add_bootstrap() {
 		wp_enqueue_style( 'bootstrap-css', KARAPUZ_THEME_URI . '/assets/css/bootstrap.css' );
 		wp_enqueue_style( 'mkarapuz-css', KARAPUZ_THEME_URI . '/style.css' );
 		wp_enqueue_script( 'bootstrap-js', KARAPUZ_THEME_URI . '/assets/js/bootstrap.js', array (), '4.0.0', true );
 	}
 
-	add_action( 'wp_enqueue_scripts', 'theme_add_bootstrap' );
+	add_action( 'wp_enqueue_scripts', 'kz_theme_add_bootstrap' );
 
+	/**
+	 * Add WooCommerce Support
+	 */
 
+	function kz_theme_add_woocommerce_support() {
+		add_theme_support( 'woocommerce', array(
+				'product_grid'          => array(
+				'default_rows'    => 20,
+				'default_columns' => 4,
+			),
+		) );
+	}
+	add_action( 'after_setup_theme', 'kz_theme_add_woocommerce_support' );
+
+	function mode_theme_update_mini_cart() {
+		echo wc_get_template( 'cart/mini-cart.php' );
+		die();
+	}
+	add_filter( 'wp_ajax_nopriv_mode_theme_update_mini_cart', 'mode_theme_update_mini_cart' );
+	add_filter( 'wp_ajax_mode_theme_update_mini_cart', 'mode_theme_update_mini_cart' );

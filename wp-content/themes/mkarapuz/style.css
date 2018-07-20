@@ -6,3 +6,211 @@ Author:         Alina Valovenko
 Version:        0.1.0
 Text Domain: 	mkarapuz
 */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700&subset=cyrillic');
+
+html {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 320px;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+    color: #4a4a4a;
+    font-size: 14px;
+    line-height: 17px;
+    background: #fff;
+    letter-spacing: -0.3px;
+}
+
+/** Common styles */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1400px;
+    }
+}
+
+/** Links styles */
+a {
+    text-decoration: none;
+    transition: .3s;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/** Button styles */
+
+/** Navigation styles */
+.kz-top-bar-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.kz-top-bar-menu ul li {
+    display: inline-block;
+    padding: 0 10px 0 0;
+}
+
+.kz-top-bar-menu {
+
+}
+
+/** Sidebar styles */
+
+/** Top Bar styles */
+.kz-top-bar {
+    background-color: #fc7b00;
+    padding: 15px 0px;
+}
+
+.kz-top-bar a {
+    color: #fff;
+}
+
+.kz-top-bar a:hover {
+    color: #4a4a4a;
+    font-weight: 400;
+}
+
+.highlight-line {
+    height: 1px;
+    opacity: 0.15;
+    background-color: #ffffff;
+}
+
+/** Header styles */
+header {
+    background-image: linear-gradient(#ff8500, #ff8500), linear-gradient(to bottom, rgba(250, 217, 97, 0.23), rgba(247, 107, 28, 0.45));
+    box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.06);
+}
+
+header .kz-primary-bar {
+    padding: 25px 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+header .kz-primary-bar .kz-header-holder .kz-logo-wrap:before {
+    background-color: #f27e00;
+    width: 1px;
+    height: auto;
+    top: 0;
+    bottom: 0;
+    right: 5%;
+    content: '';
+    position: absolute;
+}
+
+header .kz-logo-wrap {
+    cursor: pointer;
+}
+
+header .kz-logo-wrap a {
+    color: #fff;
+}
+
+header .kz-logo-img1 {
+    max-width: 70px;
+    float: left;
+    width: 100%;
+    margin: 0 14px 0 0;
+}
+
+header .kz-logo-img2 {
+    max-width: 285px;
+    width: 100%;
+    float: left;
+    margin: -10px 0 0;
+}
+
+header .kz-logo .karapuz-logo-title {
+    color: #fff;
+    font-size: 15px;
+    line-height: 1;
+    display: inline-block;
+    vertical-align: top;
+    padding: 3px 0 0 40px;
+    font-weight: normal;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header .kz-wishlist a {
+    font-size: 14px;
+    float: right;
+}
+
+.kz-header-contacts {
+    color: #fff;
+    overflow: hidden;
+}
+
+header .kz-header-contacts span {
+    font-weight: bold;
+}
+
+header .kz-header-contacts a {
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    letter-spacing: 0.2px;
+    margin: 0 10px 0 0;
+}
+
+header .kz-header-contacts a:hover {
+    color: #4a4a4a;
+}
+
+header .kz-contacts-title {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+    float: left;
+}
+
+header .kz-contacts-time {
+    float: right;
+    color: #ffc98b;
+}
+
+header .kz-mail-holder a {
+    margin: 10px 10px 0 0;
+    text-decoration: underline;
+    font-size: 13px;
+}
+
+header .kz-contacts-title-holder {
+    max-width: 87%;
+    display: block;
+    overflow: hidden;
+}
+
+header .kz-right .img-wrap {
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+}
+
+header .kz-search {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    margin: 0 20px 0 0;
+}
+
+header .kz-search input[type="text"] {
+    width: 150px;
+    height: 40px;
+    line-height: 30;
+    border-radius: 24px!important;
+    font-size: 14px;
+    color: #fff;
+    background-color: #fc7b00;
+    box-shadow: 0 2px 0 0 rgba(255, 255, 255, 0.16), inset 0 1px 2px 0 #c15a00;
+    padding: 5px 5px 5px 38px;
+}

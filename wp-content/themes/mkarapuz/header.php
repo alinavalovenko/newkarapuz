@@ -31,11 +31,10 @@
 						'menu_class'     => 'kz-top-bar-menu',
 					) ); ?>
                 </div>
-                <div class="hidden-xs col-sm-3 kz-wishlist pull-right"><a href="#">Избранное</a></div>
+                <div class="hidden-xs col-sm-3 kz-wishlist pull-right"><a href="<?php echo '/%wishlist_url%'; ?>">Избранное <span class="wishlist-count"><?php echo yith_wcwl_count_all_products(); ?></span> </a></div>
             </div>
         </div>
     </div>
-    <div class="highlight-line"></div>
     <header id="masthead" class="site-header container-fluid">
         <div class="container kz-primary-bar">
             <div class="row">

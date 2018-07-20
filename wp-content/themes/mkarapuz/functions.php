@@ -52,6 +52,7 @@
 
 	function kz_theme_add_bootstrap() {
 		wp_enqueue_style( 'bootstrap-css', KARAPUZ_THEME_URI . '/assets/css/bootstrap.css' );
+		wp_enqueue_style( 'kz-futurisc-font-css', KARAPUZ_THEME_URI . '/assets/fonts/FuturisC/stylesheet.css' );
 		wp_enqueue_style( 'mkarapuz-css', KARAPUZ_THEME_URI . '/style.css' );
 		wp_enqueue_script( 'bootstrap-js', KARAPUZ_THEME_URI . '/assets/js/bootstrap.js', array (), '4.0.0', true );
 	}

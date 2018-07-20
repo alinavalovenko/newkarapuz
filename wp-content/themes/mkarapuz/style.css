@@ -18,10 +18,10 @@ html {
 
 body {
     min-width: 320px;
-    font-family: 'Roboto', 'Open Sans', sans-serif;
+    font-family: 'FuturisC', 'Roboto', 'Open Sans', sans-serif;
     color: #4a4a4a;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 15px;
+    line-height: 18px;
     background: #fff;
     letter-spacing: -0.3px;
 }
@@ -140,9 +140,10 @@ header .kz-logo .karapuz-logo-title {
     font-family: 'Open Sans', sans-serif;
 }
 
-header .kz-wishlist a {
+.kz-wishlist{
+    text-align: right;
+    text-align: right;
     font-size: 14px;
-    float: right;
 }
 
 .kz-header-contacts {
@@ -178,14 +179,18 @@ header .kz-contacts-time {
     color: #ffc98b;
 }
 
+header .kz-mail-holder a:last-child {
+    font-size: 1.06em;
+}
+
 header .kz-mail-holder a {
     margin: 10px 10px 0 0;
     text-decoration: underline;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 header .kz-contacts-title-holder {
-    max-width: 87%;
+    max-width: 81%;
     display: block;
     overflow: hidden;
 }
@@ -197,20 +202,54 @@ header .kz-right .img-wrap {
 }
 
 header .kz-search {
-    display: inline-block;
-    vertical-align: middle;
+    float: right;
     position: relative;
-    margin: 0 20px 0 0;
+    margin-right: 15px;
 }
 
 header .kz-search input[type="text"] {
-    width: 150px;
+    font-family: 'FuturisC', 'Roboto', 'Open Sans', sans-serif;
+    font-style: italic;
+    width: 200px;
     height: 40px;
-    line-height: 30;
-    border-radius: 24px!important;
-    font-size: 14px;
-    color: #fff;
+    border-radius: 24.5px !important;
     background-color: #fc7b00;
     box-shadow: 0 2px 0 0 rgba(255, 255, 255, 0.16), inset 0 1px 2px 0 #c15a00;
-    padding: 5px 5px 5px 38px;
+}
+header .kz-right-holder {
+    display: block;
+    position: relative;
+    margin: 15px 0;
+}
+header .kz-cart{
+    float: right;
+    border-radius: 24px;
+    border: 2px solid #fff;
+    padding: 5px 15px 5px 15px;
+    display: block;
+    height: 40px;
+    background-color: #ff8500;
+}
+
+header .kz-cart .kz-cart-title {
+    padding: 0 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+header .kz-cart a{
+    color: #fff;
+}
+
+header .kz-mini-cart {
+    clear: both;
+    width: 320px;
+    background: #fff;
+    position: absolute;
+    /*right: 0px;*/
+    /*top: 43px;
+    box-shadow: 0 2px 0 0 rgba(255, 255, 255, 0.16), inset 0 1px 2px 0 #c15a00;
+    padding: 15px;
+    z-index: 100;
+    opacity: 0;*/
+    left: -34000px;
 }

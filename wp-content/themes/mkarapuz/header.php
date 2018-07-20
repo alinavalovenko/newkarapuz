@@ -31,7 +31,7 @@
 						'menu_class'     => 'kz-top-bar-menu',
 					) ); ?>
                 </div>
-                <div class="hidden-xs col-sm-3 kz-wishlist pull-right"><a href="<?php echo '/%wishlist_url%'; ?>">Избранное <span class="wishlist-count"><?php echo yith_wcwl_count_all_products(); ?></span> </a></div>
+                <div class="hidden-xs col-sm-3 kz-wishlist pull-right"><?php echo do_shortcode('[ti_wishlist_products_counter]'); ?></div>
             </div>
         </div>
     </div>

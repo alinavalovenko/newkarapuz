@@ -33,6 +33,9 @@ $sales_products = get_field( 'kz_home_sale_section_text' );
 $new_products = get_field( 'kz_home_new_products_section_text' );
 $popular_products = get_field('kz_home_popular_products_section');
 $bottom_banners = get_field('kz_home_bottom_banners_group');
+$sales_page_url = get_field('kz_home_sale_section_url');
+$newest_page_url = get_field('kz_home_new_products_section_text');
+$popular_page_url = get_field('kz_home_popular_products_section_text');
 
 get_header(); ?>
 <div id="primary" class="content-area">
@@ -107,18 +110,26 @@ get_header(); ?>
             <div class="kz-sales-section-wrap">
                 <div class="kz-sales-section-title">
                     <h3>Скидки</h3>
-                    <a href=""></a>
+                    <a href="<? echo (empty($sales_page_url)) ? '#' : $sales_page_url ;?>">Посмотреть весь ассортимент</a>
                 </div>
                 <?php echo do_shortcode($sales_products); ?>
             </div>
         </div>
         <div class="container-fluid">
-            <div class="kz-new-prosucts-secrion">
+            <div class="kz-newest-products-section">
+                <div class="kz-newest-section-title">
+                    <h3>Новинки</h3>
+                    <a href="<? echo (empty($newest_page_url)) ? '#' : $newest_page_url ;?>">Посмотреть весь ассортимент</a>
+                </div>
 	            <?php echo do_shortcode($new_products); ?>
             </div>
         </div>
         <div class="container">
             <div class="kz-popular-products-wrap">
+                <div class="kz-popular-section-title">
+                    <h3>Популярное</h3>
+                    <a href="<? echo (empty($popular_page_url)) ? '#' : $popular_page_url ;?>">Посмотреть весь ассортимент</a>
+                </div>
                 <?php echo do_shortcode($popular_products); ?>
             </div>
             <div class="kz-bottom-banners-wrap">

@@ -315,3 +315,140 @@ footer .kz-footer-widget li{
 footer .footer-logo{
     margin-top: 15px;
 }
+/*** FRONT PAGE ***/
+.home .kz-top-banner-wrap {
+    padding: 0px;
+}
+.home .kz-banner-holder {
+    padding: 0px;
+}
+.home .kz-top-banner-wrap img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+.home .kz-top-banner-wrap .kz-left-banner-holder,
+.home .kz-top-banner-wrap .kz-top-right-banner,
+.home .kz-top-banner-wrap .kz-bottom-right-banner{
+    position: relative;
+}
+
+.home .kz-top-banner-wrap .kz-banner-slogan{
+    position: absolute;
+    font-family: 'FuturisC', 'Roboto', 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.06;
+
+}
+
+.home .kz-top-banner-wrap .kz-left-banner-holder .kz-banner-slogan{
+    top: 30%;
+    left: 10%;
+    font-size: 36px;
+    letter-spacing: -0.4px;
+    color: #000000;
+    width: 210px;
+}
+
+.home .kz-top-banner-wrap .kz-top-right-banner .kz-banner-slogan {
+    top: 12%;
+    left: 10%;
+    font-size: 30px;
+    width: 206px;
+    color: #000000;
+}
+
+.home .kz-top-banner-wrap .kz-bottom-right-banner .kz-banner-slogan {
+    width: 180px;
+    font-size: 30px;
+    line-height: 1.07;
+    letter-spacing: -0.3px;
+    color: #ffffff;
+    top: 12%;
+    left: 10%;
+}
+
+.home .kz-icon-section-wrap {
+    margin: 40px 0;
+    position: relative;
+    text-align: center;
+}
+
+.home  .kz-icon-title {
+    margin: 15px 0;
+    height: 24px;
+    font-size: 20px;
+    font-weight: 800;
+    color: #58a400;
+}
+
+.home .kz-icon-subtitle {
+    font-size: 14px;
+    font-family: 'Open Sans';
+    color: #58a400;
+}
+
+.home .kz-categories-banner-wrap {
+    position: relative;
+    margin: 40px 0;
+    padding: 0;
+}
+.home .category-banner-holder{
+    margin: 15px 0;
+}
+.home .category-banner-holder span {
+    position: absolute;
+    border-radius: 22.5px;
+    background-color: #ffffff;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    color: #4a4a4a;
+}
+.home .category-banner-holder img {
+    width: 100%;
+    height: auto;
+}
+
+.home .kz-sales-section-title h3,
+.home .kz-newest-section-title h3,
+.home .kz-popular-section-title h3 {
+    display: inline-block;
+    text-align: left;
+}
+
+.home .kz-sales-section-title a,
+.home .kz-newest-section-title a,
+.home .kz-popular-section-title a{
+    display: inline-block;
+    float: right;
+    color: #ff8500;
+}
+.home .kz-sales-section-title a:hover,
+.home .kz-newest-section-title a:hover,
+.home .kz-popular-section-title a:hover{
+    color: #9f5000;
+}
+
+.home .kz-bottom-banners-wrap {
+    margin: 60px 0;
+}
+.home .kz-sales-section-wrap,
+.home .kz-newest-products-section,
+.home .kz-popular-products-wrap{
+    margin: 20px 0;
+    padding: 40px 0;
+}
+
+.home .kz-newest-products-section {
+    background: #fcf8f0;
+}
+.home .container-fluid.kz-newest-products-wrap {
+    margin: 0px;
+    padding: 0px;
+}

@@ -4,7 +4,7 @@
  *
  * If the user has selected a static page for their homepage, this is what will
  * appear.
- *
+ * Template Name: Home
  */
 
 get_header(); ?>

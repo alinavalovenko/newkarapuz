@@ -56,6 +56,7 @@
 		wp_enqueue_style( 'mkarapuz_css', KARAPUZ_THEME_URI . '/style.css' );
 		wp_enqueue_script( 'kz_jquery_js', KARAPUZ_THEME_URI . '/assets/js/jquery-3.3.1.min.js', array (), '3.3.1', true );
 		wp_enqueue_script( 'bootstrap_js', KARAPUZ_THEME_URI . '/assets/js/bootstrap.js', array (), '4.0.0', true );
+		wp_enqueue_script( 'kz_scripts_js', KARAPUZ_THEME_URI . '/assets/js/mkarapuz.js', array (), '1.0.0', true );
 
 	}
 

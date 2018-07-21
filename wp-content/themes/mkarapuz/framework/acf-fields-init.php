@@ -2,13 +2,14 @@
 if ( function_exists( 'acf_add_local_field_group' ) ):
 
 	acf_add_local_field_group( array(
-		'key'                   => 'kz_home_page_group',
+		'key'                   => 'kz_home_page',
 		'title'                 => 'Home Page',
+		'name'                  => 'kz_home_page_group',
 		'fields'                => array(
 			array(
 				'key'               => 'kz-home-banners-group',
 				'label'             => 'Рекламные баннеры',
-				'name'              => 'home_banner',
+				'name'              => 'kz_home_banner_group',
 				'type'              => 'group',
 				'instructions'      => '',
 				'required'          => 0,
@@ -269,7 +270,7 @@ if ( function_exists( 'acf_add_local_field_group' ) ):
 				'required'          => 0,
 				'conditional_logic' => 0,
 				'wrapper'           => array(
-					'width' => '',
+					'width' => '50%',
 					'class' => 'home-sale-section',
 					'id'    => '',
 				),
@@ -280,6 +281,28 @@ if ( function_exists( 'acf_add_local_field_group' ) ):
 				'maxlength'         => '',
 			),
 			array(
+				'key' => 'kz_home_sale_page',
+				'label' => 'Show all sales on the page above',
+				'name' => 'kz_home_sale_section_url',
+				'type' => 'page_link',
+				'instructions' => 'Выберите страницу на который отображены товары со скидками',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '50%',
+					'class' => '',
+					'id' => '',
+				),
+				'post_type' => array(
+					0 => 'page',
+				),
+				'taxonomy' => array(
+				),
+				'allow_null' => 0,
+				'allow_archives' => 1,
+				'multiple' => 0,
+			),
+			array(
 				'key'               => 'kz_home_new_products_section',
 				'label'             => 'Home New Products section',
 				'name'              => 'kz_home_new_products_section_text',
@@ -288,7 +311,7 @@ if ( function_exists( 'acf_add_local_field_group' ) ):
 				'required'          => 0,
 				'conditional_logic' => 0,
 				'wrapper'           => array(
-					'width' => '',
+					'width' => '50%',
 					'class' => 'home-new-products-section',
 					'id'    => '',
 				),
@@ -297,6 +320,29 @@ if ( function_exists( 'acf_add_local_field_group' ) ):
 				'prepend'           => '',
 				'append'            => '',
 				'maxlength'         => '',
+			),
+
+			array(
+				'key' => 'kz_home_new_products_page',
+				'label' => 'Show all new products on the page above',
+				'name' => 'kz_home_newest_products_page_url',
+				'type' => 'page_link',
+				'instructions' => 'Выберите страницу на который отображены новинки',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '50%',
+					'class' => '',
+					'id' => '',
+				),
+				'post_type' => array(
+					0 => 'page',
+				),
+				'taxonomy' => array(
+				),
+				'allow_null' => 0,
+				'allow_archives' => 1,
+				'multiple' => 0,
 			),
 			array(
 				'key'               => 'kz_home_popular_products_section',
@@ -307,7 +353,7 @@ if ( function_exists( 'acf_add_local_field_group' ) ):
 				'required'          => 0,
 				'conditional_logic' => 0,
 				'wrapper'           => array(
-					'width' => '',
+					'width' => '50%',
 					'class' => 'home-popular-products-section',
 					'id'    => '',
 				),
@@ -316,6 +362,28 @@ if ( function_exists( 'acf_add_local_field_group' ) ):
 				'prepend'           => '',
 				'append'            => '',
 				'maxlength'         => '',
+			),
+			array(
+				'key' => 'kz_home_featured_products_page',
+				'label' => 'Show all featured products on the page above',
+				'name' => 'kz_home_featured_products_page_url',
+				'type' => 'page_link',
+				'instructions' => 'Выберите страницу на который отображены популярные товары',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '50%',
+					'class' => '',
+					'id' => '',
+				),
+				'post_type' => array(
+					0 => 'page',
+				),
+				'taxonomy' => array(
+				),
+				'allow_null' => 0,
+				'allow_archives' => 1,
+				'multiple' => 0,
 			),
 			array(
 				'key'               => 'kz_home_bottom_banners',

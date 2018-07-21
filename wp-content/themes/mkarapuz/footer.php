@@ -10,8 +10,21 @@
 	 */
 ?>
 <div class="container-fluid kz-callback-wrap">
-    <div class="container kz-callback-section">
-
+    <div class="container">
+<div class="row">
+    <div class="col-xs-12 col-sm-6">
+        <div class="kz-callback-text-wrap">
+            <div class="kz-callback-title">Остались вопросы? Мы вам перезвоним!</div>
+            <div class="kz-callback-subtitle">Время работы call-центра: с 09:00 до 21:00</div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+        <div class="kz-callback-form">
+            <input type="text" name="kz-footer-callback" id="kz-footer-callback" required="required">
+            <button class="kz-primaty-button" id="kz-send-mail">Callback</button>
+        </div>
+    </div>
+</div>
     </div>
 </div>
 <footer class="container-fluid">

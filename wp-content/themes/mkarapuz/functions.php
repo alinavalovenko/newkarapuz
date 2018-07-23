@@ -80,3 +80,4 @@
 		echo wc_get_template( 'cart/mini-cart.php' );
 		die();
 	}
+

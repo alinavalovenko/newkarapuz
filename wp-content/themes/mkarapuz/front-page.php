@@ -131,8 +131,7 @@ get_header(); ?>
             <div class="kz-newest-products-section">
                 <div class="container kz-newest-section-title">
                     <h3>Новинки</h3>
-                    <a href="<? echo ( empty( $newest_page_url ) ) ? '#' : $newest_page_url; ?>">Посмотреть весь
-                        ассортимент</a>
+                    <a href="<? echo ( empty( $newest_page_url ) ) ? '#' : $newest_page_url; ?>">Посмотреть весь ассортимент</a>
                     <?php echo do_shortcode( $new_products ); ?>
                 </div>
 
@@ -142,8 +141,7 @@ get_header(); ?>
             <div class="kz-popular-products-wrap">
                 <div class="kz-popular-section-title">
                     <h3>Популярное</h3>
-                    <a href="<? echo ( empty( $popular_page_url ) ) ? '#' : $popular_page_url; ?>">Посмотреть весь
-                        ассортимент</a>
+                    <a href="<? echo ( empty( $popular_page_url ) ) ? '#' : $popular_page_url; ?>">Посмотреть весь ассортимент</a>
                 </div>
 				<?php echo do_shortcode( $popular_products ); ?>
             </div>

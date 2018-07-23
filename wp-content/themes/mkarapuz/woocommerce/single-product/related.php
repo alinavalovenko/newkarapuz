@@ -22,12 +22,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 if ( $related_products ) : ?>
 
-	<section class="related products alina">
+	<section class="related products">
 
 		<h2><?php esc_html_e( 'Related products', 'woocommerce' ); ?></h2>
 
 		<?php woocommerce_product_loop_start(); ?>
-
+        <div class="kz-related-list">
 			<?php foreach ( $related_products as $related_product ) : ?>
 
 				<?php
@@ -35,10 +35,10 @@ if ( $related_products ) : ?>
 
 					setup_postdata( $GLOBALS['post'] =& $post_object );
 
-					wc_get_template_part( 'content', 'product' ); ?>
+					wc_get_template_part( 'content', 'product_related' ); ?>
 
 			<?php endforeach; ?>
-
+        </div>
 		<?php woocommerce_product_loop_end(); ?>
 
 	</section>

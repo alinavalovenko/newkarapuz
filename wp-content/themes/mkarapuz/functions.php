@@ -54,9 +54,11 @@
 		wp_enqueue_style( 'bootstrap_css', KARAPUZ_THEME_URI . '/assets/css/bootstrap.css' );
 		wp_enqueue_style( 'kz_futurisc_font_css', KARAPUZ_THEME_URI . '/assets/fonts/FuturisC/stylesheet.css' );
 		wp_enqueue_style( 'mkarapuz_css', KARAPUZ_THEME_URI . '/style.css' );
+		wp_enqueue_style( 'kz_slick_css', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css' );
 		wp_enqueue_script( 'kz_jquery_js', KARAPUZ_THEME_URI . '/assets/js/jquery-3.3.1.min.js', array (), '3.3.1', true );
 		wp_enqueue_script( 'bootstrap_js', KARAPUZ_THEME_URI . '/assets/js/bootstrap.js', array (), '4.0.0', true );
 		wp_enqueue_script( 'kz_scripts_js', KARAPUZ_THEME_URI . '/assets/js/mkarapuz.js', array (), '1.0.0', true );
+		wp_enqueue_script( 'kz_slick_js', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array (), '1.0.0', true );
 
 	}
 
@@ -81,3 +83,13 @@
 		die();
 	}
 
+	/**
+	 * Change number of related products output
+	 */
+
+	add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_args' );
+	function jk_related_products_args( $args ) {
+		$args['posts_per_page'] = 8;
+		$args['columns'] = 4;
+		return $args;
+	}

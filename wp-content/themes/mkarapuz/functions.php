@@ -54,8 +54,8 @@
 		wp_enqueue_style( 'bootstrap_css', KARAPUZ_THEME_URI . '/assets/css/bootstrap.css' );
 		wp_enqueue_style( 'kz_futurisc_font_css', KARAPUZ_THEME_URI . '/assets/fonts/FuturisC/stylesheet.css' );
 		wp_enqueue_style( 'mkarapuz_css', KARAPUZ_THEME_URI . '/style.css' );
-		wp_enqueue_style( 'kz_slick_css', KARAPUZ_THEME_URI . '/assets/slick/slick.scss' );
-		wp_enqueue_style( 'kz_slick_theme_css', KARAPUZ_THEME_URI . '/assets/slick/slick-theme.scss' );
+		wp_enqueue_style( 'kz_slick_css', KARAPUZ_THEME_URI . '/assets/slick/slick.css' );
+		wp_enqueue_style( 'kz_slick_theme_css', KARAPUZ_THEME_URI . '/assets/slick/slick-theme.css' );
 		wp_enqueue_script( 'kz_jquery_js', KARAPUZ_THEME_URI . '/assets/js/jquery-3.3.1.min.js', array (), '3.3.1', true );
 		wp_enqueue_script( 'bootstrap_js', KARAPUZ_THEME_URI . '/assets/js/bootstrap.js', array (), '4.0.0', true );
 		wp_enqueue_script( 'kz_slick_js', KARAPUZ_THEME_URI . '/assets/slick/slick.min.js', array (), '1.8.1', true );
@@ -114,3 +114,31 @@
 
 		add_shortcode( 'kz_recent_products', 'kz_recent_products' );
 	}
+	add_action( 'wp_enqueue_scripts', 'kz_ajax_data', 99 );
+	function kz_ajax_data() {
+
+		wp_localize_script( 'kz_scripts_js', 'kz_ajax',
+			array (
+				'url' => admin_url( 'admin-ajax.php' ),
+			)
+		);
+
+	}
+
+	add_action( 'wp_ajax_kz_callback', 'kz_callback_ajax' );
+	add_action( 'wp_ajax_nopriv_kz_callback', 'kz_callback_ajax' );
+
+	function kz_callback_ajax() {
+		$user_phone = $_POST['phone'];
+		$headers    = 'From: MKARAPUZ Callback <callback@mkarapuz.com.ua>' . "\r\n";
+		//$response = wp_mail( 'sales@mkarapuz.com.ua', '[MKARAPUZ] Обратный звонок', 'Заказан обратный звонок: ' . $user_phone, $headers, '' );
+		$response = wp_mail( 'alina.valovenko@gmail.com', '[MKARAPUZ] Обратный звонок', 'Заказан обратный звонок: ' . $user_phone, $headers, '' );
+		if ( $response ) {
+			echo 'Ваш запрос успешно отправлен';
+		} else {
+			echo 'Во время отправки запроса произшла ошибка, повторите попытку позже';
+		}
+
+		wp_die();
+	}
+

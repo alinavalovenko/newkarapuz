@@ -40,7 +40,7 @@ $popular_page_url         = get_field( 'kz_home_popular_products_section_text' )
 get_header(); ?>
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
-        <div class="container-fluid ">
+        <div class="container-fluid">
             <div class="row kz-top-banner-wrap">
                 <div class="col-xs-12 col-sm-8 kz-banner-holder">
                     <div class="kz-left-banner-holder">

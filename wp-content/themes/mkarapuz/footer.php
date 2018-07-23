@@ -20,7 +20,7 @@
     </div>
     <div class="col-xs-12 col-sm-6">
         <div class="kz-callback-form">
-            <input type="text" name="kz-footer-callback" id="kz-footer-callback" required="required">
+            <input type="text" name="kz-footer-callback" id="kz-footer-callback" placeholder="Ваш номер телефона" required="required">
             <button class="kz-primaty-button" id="kz-send-mail">Callback</button>
         </div>
     </div>

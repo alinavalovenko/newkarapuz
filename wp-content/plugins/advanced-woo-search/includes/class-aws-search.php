@@ -54,6 +54,10 @@ if ( ! class_exists( 'AWS_Search' ) ) :
          */
         public function action_callback() {
 
+            if ( ! defined( 'DOING_AJAX' ) ) {
+                define( 'DOING_AJAX', true );
+            }
+
             echo json_encode( $this->search() );
 
             die;

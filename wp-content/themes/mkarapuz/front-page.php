@@ -133,8 +133,9 @@ get_header(); ?>
                     <h3>Новинки</h3>
                     <a href="<? echo ( empty( $newest_page_url ) ) ? '#' : $newest_page_url; ?>">Посмотреть весь
                         ассортимент</a>
+                    <?php echo do_shortcode( $new_products ); ?>
                 </div>
-				<?php echo do_shortcode( $new_products ); ?>
+
             </div>
         </div>
         <div class="container">

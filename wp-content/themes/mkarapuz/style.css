@@ -25,10 +25,12 @@ body {
     background: #f6f7f9;
     letter-spacing: -0.3px;
 }
+
 img {
     max-width: 100%;
     height: auto;
 }
+
 /** Common styles */
 @media (min-width: 1200px) {
     .container {
@@ -135,7 +137,7 @@ header .kz-logo .karapuz-logo-title {
     font-family: 'Open Sans', sans-serif;
 }
 
-.kz-wishlist{
+.kz-wishlist {
     text-align: right;
     text-align: right;
     font-size: 14px;
@@ -202,7 +204,6 @@ header .kz-search {
     margin-right: 15px;
 }
 
-
 header .kz-search input[type="text"]::placeholder {
     color: #fff;
 }
@@ -217,12 +218,14 @@ header .kz-search input[type="text"] {
     background-color: #fc7b00;
     box-shadow: 0 2px 0 0 rgba(255, 255, 255, 0.16), inset 0 1px 2px 0 #c15a00;
 }
+
 header .kz-right-holder {
     display: block;
     position: relative;
     margin: 15px 0;
 }
-header .kz-cart{
+
+header .kz-cart {
     float: right;
     border-radius: 24px;
     border: 2px solid #fff;
@@ -237,7 +240,8 @@ header .kz-cart .kz-cart-title {
     display: inline-block;
     vertical-align: middle;
 }
-header .kz-cart a{
+
+header .kz-cart a {
     color: #fff;
 }
 
@@ -276,28 +280,31 @@ footer {
     color: #fff;
     font-family: 'FuturisC', 'Roboto', 'Open Sans', sans-serif;
 }
-footer ul{
+
+footer ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-footer ul li a{
+footer ul li a {
     color: #fff;
     font-weight: normal;
     opacity: 0.5;
 }
-footer ul li{
+
+footer ul li {
     line-height: 1.5;
     font-size: 14px;
     margin: 0 -4px 0 0;
 }
-footer ul li a:hover{
+
+footer ul li a:hover {
     opacity: 1;
     color: #ff8500;
 }
 
-footer .kz-footer-col-title, .kz-widget-title{
+footer .kz-footer-col-title, .kz-widget-title {
     font-size: 18px;
     font-weight: normal;
     font-style: normal;
@@ -305,36 +312,41 @@ footer .kz-footer-col-title, .kz-widget-title{
     line-height: 1.5;
     margin-bottom: 15px;
 }
-footer .kz-footer-widget li{
+
+footer .kz-footer-widget li {
     display: inline-block;
     vertical-align: middle;
     width: 50%;
     border: none;
 }
 
-footer .footer-logo{
+footer .footer-logo {
     margin-top: 15px;
 }
+
 /*** FRONT PAGE ***/
 .home .kz-top-banner-wrap {
     padding: 0px;
 }
+
 .home .kz-banner-holder {
     padding: 0px;
 }
+
 .home .kz-top-banner-wrap img {
     width: 100%;
     height: auto;
     padding: 0;
     margin: 0;
 }
+
 .home .kz-top-banner-wrap .kz-left-banner-holder,
 .home .kz-top-banner-wrap .kz-top-right-banner,
-.home .kz-top-banner-wrap .kz-bottom-right-banner{
+.home .kz-top-banner-wrap .kz-bottom-right-banner {
     position: relative;
 }
 
-.home .kz-top-banner-wrap .kz-banner-slogan{
+.home .kz-top-banner-wrap .kz-banner-slogan {
     position: absolute;
     font-family: 'FuturisC', 'Roboto', 'Open Sans', sans-serif;
     font-weight: 800;
@@ -344,7 +356,7 @@ footer .footer-logo{
 
 }
 
-.home .kz-top-banner-wrap .kz-left-banner-holder .kz-banner-slogan{
+.home .kz-top-banner-wrap .kz-left-banner-holder .kz-banner-slogan {
     top: 30%;
     left: 10%;
     font-size: 36px;
@@ -377,7 +389,7 @@ footer .footer-logo{
     text-align: center;
 }
 
-.home  .kz-icon-title {
+.home .kz-icon-title {
     margin: 15px 0;
     height: 24px;
     font-size: 20px;
@@ -396,9 +408,11 @@ footer .footer-logo{
     margin: 40px 0;
     padding: 0;
 }
-.home .category-banner-holder{
+
+.home .category-banner-holder {
     margin: 15px 0;
 }
+
 .home .category-banner-holder span {
     position: absolute;
     border-radius: 22.5px;
@@ -410,6 +424,7 @@ footer .footer-logo{
     padding: 10px 20px;
     color: #4a4a4a;
 }
+
 .home .category-banner-holder img {
     width: 100%;
     height: auto;
@@ -424,23 +439,25 @@ footer .footer-logo{
 
 .home .kz-sales-section-title a,
 .home .kz-newest-section-title a,
-.home .kz-popular-section-title a{
+.home .kz-popular-section-title a {
     display: inline-block;
     float: right;
     color: #ff8500;
 }
+
 .home .kz-sales-section-title a:hover,
 .home .kz-newest-section-title a:hover,
-.home .kz-popular-section-title a:hover{
+.home .kz-popular-section-title a:hover {
     color: #9f5000;
 }
 
 .home .kz-bottom-banners-wrap {
     margin: 60px 0;
 }
+
 .home .kz-sales-section-wrap,
 .home .kz-newest-products-section,
-.home .kz-popular-products-wrap{
+.home .kz-popular-products-wrap {
     margin: 20px 0;
     padding: 40px 0;
 }
@@ -448,7 +465,19 @@ footer .footer-logo{
 .home .kz-newest-products-section {
     background: #fcf8f0;
 }
+
 .home .container-fluid.kz-newest-products-wrap {
     margin: 0px;
     padding: 0px;
 }
+
+.home .woocommerce.kz-recent-products ul.products li.first,
+.home .woocommerce.kz-recent-products ul.products li.last {
+    clear: none !important;
+    float: left;
+    margin: 0 3.8% 2.992em 0;
+    padding: 0;
+    position: relative;
+    width: 22.05%;
+}
+

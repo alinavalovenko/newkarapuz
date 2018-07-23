@@ -475,9 +475,11 @@ footer .footer-logo {
 .home .woocommerce.kz-recent-products ul.products li.last {
     clear: none !important;
     float: left;
-    margin: 0 3.8% 2.992em 0;
+    /*margin: 0 3.8% 2.992em 0;*/
     padding: 0;
     position: relative;
     width: 22.05%;
 }
-
+.kz-recent-products ul.products li{
+    margin: 0 1.2% 0 0 !important;
+}

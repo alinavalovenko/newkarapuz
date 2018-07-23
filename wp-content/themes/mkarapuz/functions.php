@@ -54,7 +54,8 @@
 		wp_enqueue_style( 'bootstrap_css', KARAPUZ_THEME_URI . '/assets/css/bootstrap.css' );
 		wp_enqueue_style( 'kz_futurisc_font_css', KARAPUZ_THEME_URI . '/assets/fonts/FuturisC/stylesheet.css' );
 		wp_enqueue_style( 'mkarapuz_css', KARAPUZ_THEME_URI . '/style.css' );
-		wp_enqueue_style( 'kz_slick_css', KARAPUZ_THEME_URI . '/assets/slick/slick.css' );
+		wp_enqueue_style( 'kz_slick_css', KARAPUZ_THEME_URI . '/assets/slick/slick.scss' );
+		wp_enqueue_style( 'kz_slick_theme_css', KARAPUZ_THEME_URI . '/assets/slick/slick-theme.scss' );
 		wp_enqueue_script( 'kz_jquery_js', KARAPUZ_THEME_URI . '/assets/js/jquery-3.3.1.min.js', array (), '3.3.1', true );
 		wp_enqueue_script( 'bootstrap_js', KARAPUZ_THEME_URI . '/assets/js/bootstrap.js', array (), '4.0.0', true );
 		wp_enqueue_script( 'kz_slick_js', KARAPUZ_THEME_URI . '/assets/slick/slick.min.js', array (), '1.8.1', true );

@@ -69,13 +69,14 @@
 	 */
 
 	function kz_theme_add_woocommerce_support() {
-		add_theme_support( 'woocommerce', array(
-				'product_grid'          => array(
+		add_theme_support( 'woocommerce', array (
+			'product_grid' => array (
 				'default_rows'    => 20,
 				'default_columns' => 4,
 			),
 		) );
 	}
+
 	add_action( 'after_setup_theme', 'kz_theme_add_woocommerce_support' );
 
 	function kz_theme_update_mini_cart() {
@@ -90,28 +91,25 @@
 	add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_args' );
 	function jk_related_products_args( $args ) {
 		$args['posts_per_page'] = 8;
-		$args['columns'] = 4;
+		$args['columns']        = 4;
+
 		return $args;
 	}
 
-	if( !function_exists('kz_recent_products') ) {
+	if ( ! function_exists( 'kz_recent_products' ) ) {
 
 		function kz_recent_products( $atts ) {
 
-			extract(shortcode_atts(array(
-				'limit'   => '',
-				'columns' => ''
+			extract( shortcode_atts( array (
+				'limit' => '',
+			), $atts ) );
 
+			$recent_products = do_shortcode( '[recent_products  limit="' . $atts["limit"] . '" class="kz-recent-products"]' );
+			$recent_products = str_replace( 'columns-4 ', '', $recent_products );
 
-			), $atts));
-
-			//return '<div class="kz-recent-products">' . do_shortcode('[recent_products  limit="' . $atts["limit"] . '" columns="'. $atts["columns"] .'"]') . '</div>';
-			$string = do_shortcode('[recent_products  limit="' . $atts["limit"] .'" class="kz-recent-products"]');
-			$string = str_replace('columns-4 ', '', $string);
-			return $string;
-			//return '<div class="">' . do_shortcode('[recent_products  limit="' . $atts["limit"] .'" class="kz-recent-products"]') . '</div>';
+			return $recent_products;
 
 		}
 
-		add_shortcode('kz_recent_products', 'kz_recent_products');
+		add_shortcode( 'kz_recent_products', 'kz_recent_products' );
 	}

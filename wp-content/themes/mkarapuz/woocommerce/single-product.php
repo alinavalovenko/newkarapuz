@@ -21,7 +21,7 @@
 	}
 
 	get_header( 'shop' ); ?>
-    <div class="container">
+    <div class="container kz-single-product">
 			<?php
 				/**
 				 * woocommerce_before_main_content hook.

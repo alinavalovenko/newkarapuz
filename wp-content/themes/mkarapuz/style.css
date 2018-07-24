@@ -30,7 +30,8 @@ img {
     max-width: 100%;
     height: auto;
 }
-input{
+
+input {
     outline: none;
 }
 
@@ -517,7 +518,7 @@ footer .footer-logo {
 }
 
 .home .woocommerce.kz-recent-products ul.products li.first,
-.home .woocommerce.kz-recent-products ul.products li.last {
+.home .woocommerce.kz-recent-products ul.products li.last{
     clear: none !important;
     float: left;
     /*margin: 0 3.8% 2.992em 0;*/
@@ -551,6 +552,15 @@ footer .footer-logo {
 }
 
 /*** Single Product ***/
+.kz-single-product .related ul.products li.first,
+.kz-single-product .related ul.products li.first{
+clear: none !important;
+    margin: 0 1.2% 0 0 !important;
+    padding: 0;
+    position: relative;
+    width: 22.05%;
+    float: left;
+}
 
-.kz-single-images-wrap .woocommerce-product-gallery__image{
+.kz-single-images-wrap .woocommerce-product-gallery__image {
 }

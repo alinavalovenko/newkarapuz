@@ -91,8 +91,8 @@
 
 	add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_args' );
 	function jk_related_products_args( $args ) {
-		$args['posts_per_page'] = 8;
-		$args['columns']        = 4;
+		$args['posts_per_page'] = 7;
+		$args['columns']        = 3;
 
 		return $args;
 	}

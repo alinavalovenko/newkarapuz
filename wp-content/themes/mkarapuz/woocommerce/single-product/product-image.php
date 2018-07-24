@@ -17,7 +17,9 @@
  */
 
 defined( 'ABSPATH' ) || exit;
-
+?>
+<div class="col-xs-12 col-sm-6">
+<?php
 // Note: `wc_get_gallery_image_html` was added in WC 3.3.2 and did not exist prior. This check protects against theme overrides being used on older versions of WC.
 if ( ! function_exists( 'wc_get_gallery_image_html' ) ) {
 	return;
@@ -50,4 +52,5 @@ $wrapper_classes   = apply_filters( 'woocommerce_single_product_image_gallery_cl
 		do_action( 'woocommerce_product_thumbnails' );
 		?>
 	</figure>
+</div>
 </div>

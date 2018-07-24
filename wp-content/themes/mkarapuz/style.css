@@ -549,3 +549,8 @@ footer .footer-logo {
 .slick-prev, .slick-next {
     top: 30% !important;
 }
+
+/*** Single Product ***/
+
+.kz-single-images-wrap .woocommerce-product-gallery__image{
+}

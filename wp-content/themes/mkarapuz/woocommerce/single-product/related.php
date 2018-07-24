@@ -21,7 +21,6 @@
 	}
 
 	if ( $related_products ) : ?>
-        <div class="col-xs-12 col-sm-6">
             <section class="related products">
 
                 <h2><?php esc_html_e( 'Related products', 'woocommerce' ); ?></h2>
@@ -42,7 +41,6 @@
 				<?php woocommerce_product_loop_end(); ?>
 
             </section>
-        </div>
 	<?php endif;
 
 	wp_reset_postdata();

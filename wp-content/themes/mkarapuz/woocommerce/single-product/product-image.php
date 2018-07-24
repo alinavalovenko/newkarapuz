@@ -18,7 +18,7 @@
 
 defined( 'ABSPATH' ) || exit;
 ?>
-<div class="col-xs-12 col-sm-6 kz-single-images-wrap">
+<div class="kz-single-images-wrap">
 <?php
 // Note: `wc_get_gallery_image_html` was added in WC 3.3.2 and did not exist prior. This check protects against theme overrides being used on older versions of WC.
 if ( ! function_exists( 'wc_get_gallery_image_html' ) ) {

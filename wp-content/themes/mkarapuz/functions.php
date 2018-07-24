@@ -195,3 +195,17 @@
 		$defaults['delimiter'] = '<span class="kz-breadcrumbs-delimeter"> &gt; </span>';
 		return $defaults;
 	}
+
+	remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );
+	remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_upsell_display', 15 );
+	remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
+
+	function bbloomer_woocommerce_output_upsells() {
+		woocommerce_upsell_display( 4,1 );
+	}
+
+	add_action( 'woocommerce_share', 'bbloomer_woocommerce_output_upsells', 20 );
+	add_action( 'woocommerce_product_thumbnails', 'woocommerce_output_product_data_tabs', 25 );
+	add_action( 'woocommerce_product_thumbnails', 'woocommerce_output_related_products', 30 );
+
+

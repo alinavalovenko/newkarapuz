@@ -27,7 +27,6 @@
 	 * @see woocommerce_default_product_tabs()
 	 */
 ?>
-<div class="col-xs-12 col-sm-6">
 	<?php
 		$tabs = apply_filters( 'woocommerce_product_tabs', array () );
 
@@ -54,4 +53,3 @@
             </div>
 
 		<?php endif; ?>
-</div>

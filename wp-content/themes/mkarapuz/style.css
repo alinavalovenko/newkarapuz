@@ -282,6 +282,7 @@ header .kz-primary-bar:before {
     margin: 0;
     background: #fff;
     padding: 40px 0;
+    clear: both;
 }
 
 .kz-callback-wrap .kz-callback-text-wrap {

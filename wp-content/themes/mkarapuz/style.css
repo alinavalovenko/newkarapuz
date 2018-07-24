@@ -567,3 +567,21 @@ clear: none !important;
 }
 .kz-single-images-wrap .woocommerce-product-gallery__image {
 }
+
+/*** Shop page ***/
+header.woocommerce-products-header {
+    background-image: none;
+    box-shadow: none;
+    font-size: 30px;
+    color: #000000;
+}
+nav.woocommerce-breadcrumb{
+    margin: 10px 0 !important;
+}
+nav.woocommerce-breadcrumb a {
+    font-size: 14px;
+    color: #bfc4d2;
+}
+span.kz-breadcrumbs-delimeter {
+    padding: 0px 10px;
+}

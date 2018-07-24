@@ -59,8 +59,8 @@
 
 
 /* Clear button */
-.aws-container .aws-search-clear {
-    display: none;
+.aws-container .aws-search-form .aws-search-clear {
+    display: none !important;
     position: absolute;
     top: 0;
     right: 0;
@@ -71,7 +71,7 @@
     width: 38px;
     padding-left: 10px;
 }
-.aws-container .aws-search-clear span {
+.aws-container .aws-search-form .aws-search-clear span {
     position: relative;
     display: block;
     font-size: 24px;
@@ -80,12 +80,12 @@
     margin-top: -12px;
 }
 
-.aws-container .aws-show-clear.aws-form-active .aws-search-clear {
-    display: block;
+.aws-container .aws-search-form.aws-show-clear.aws-form-active .aws-search-clear {
+    display: block !important;
 }
 
-.aws-container .aws-form-active.aws-processing .aws-search-clear {
-    display: none;
+.aws-container .aws-search-form.aws-form-active.aws-processing .aws-search-clear {
+    display: none !important;
 }
 
 

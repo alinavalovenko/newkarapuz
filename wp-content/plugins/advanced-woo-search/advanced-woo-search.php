@@ -3,7 +3,7 @@
 /*
 Plugin Name: Advanced Woo Search
 Description: Advance ajax WooCommerce product search.
-Version: 1.45
+Version: 1.46
 Author: ILLID
 Author URI: https://advanced-woo-search.com/
 Text Domain: aws
@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'AWS_VERSION', '1.45' );
+define( 'AWS_VERSION', '1.46' );
 
 
 define( 'AWS_DIR', dirname( __FILE__ ) );
@@ -87,7 +87,9 @@ final class AWS_Main {
                 
         add_action( 'init', array( $this, 'init' ), 0 );
 
-	}
+        add_filter( 'wcml_multi_currency_ajax_actions', array( $this, 'add_wpml_ajax_actions' ) );
+
+    }
 
     /**
      * Include required core files used in admin and on the frontend.
@@ -172,6 +174,14 @@ final class AWS_Main {
         $plugin_options = $this->data['settings'];
 		$return_value = isset( $plugin_options[ $name ] ) ? $plugin_options[ $name ] : '';
         return $return_value;
+    }
+
+    /*
+     * Add ajax action to WPML plugin
+     */
+    function add_wpml_ajax_actions( $actions ){
+        $actions[] = 'aws_action';
+        return $actions;
     }
 
 }

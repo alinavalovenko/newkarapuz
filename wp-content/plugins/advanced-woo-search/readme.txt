@@ -3,8 +3,8 @@ Contributors: Mihail Barinov
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GSE37FC4Y7CEY
 Tags: widget, plugin, woocommerce, search, product search, woocommerce search, ajax search, live search, custom search, ajax, shortcode, better search, relevance search, relevant search, search by sku, search plugin, shop, store, wordpress search, wp ajax search, wp search, wp search plugin, sidebar, ecommerce, merketing, products, category search, instant-search, search highlight, woocommerce advanced search, woocommerce live search, WooCommerce Plugin, woocommerce product search
 Requires at least: 4.0
-Tested up to: 4.9.6
-Stable tag: 1.45
+Tested up to: 4.9.7
+Stable tag: 1.46
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -25,13 +25,14 @@ Advanced Woo Search - powerful live search plugin for WooCommerce. Just start ty
 * **Terms search** - Search for product categories and tags
 * **Smart ordering** - Search results ordered by the priority of source where they were found
 * **Fast** - Nothing extra. Just what you need for proper work
-* **WPML**, **Polylang**, **WooCommerce Multilingual**, **qTranslate** support
 * **Stop Words** support to exclude certain words from search.
 * Supports **variable products**
 * Support for your current **search page**. Plugin search results will be integrated to your current page layout.
 * Automatically synchronize all products data. No need to re-index all content manually after avery change.
 * Plurals support
 * Google Analytics support
+* **WPML**, **Polylang**, **WooCommerce Multilingual**, **qTranslate** support
+* **WPML multi-currency** support
 * Custom Product Tabs for WooCommerce plugin support
 * Search Exclude plugin support
 
@@ -65,6 +66,10 @@ Advanced Woo Search - powerful live search plugin for WooCommerce. Just start ty
 
 == Frequently Asked Questions ==
 
+= Knowledge Base =
+
+You can find solutions and answers at the [Advanced Woo Search guide](https://advanced-woo-search.com/guide/).
+
 = How to insert search form? =
 
 You can use build-in widget to place plugins search form to your sidebar.
@@ -89,6 +94,10 @@ Yep. This plugin is always compatible with the latest version of Woocommerce?
 4. Plugin settings page. Search results options
 
 == Changelog ==
+
+= 1.46 =
+* Add support for WPML plugin multi currency
+* Fix css styles
 
 = 1.45 =
 * Fix bug with re-index process ( too much requests error )

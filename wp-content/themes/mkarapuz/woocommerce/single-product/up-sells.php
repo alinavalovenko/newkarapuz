@@ -23,7 +23,7 @@
 	if ( $upsells ) : ?>
 
         <section class="up-sells upsells products">
-                <h2><?php esc_html_e( 'You may also like&hellip;', 'woocommerce' ) ?></h2>
+                <h2><?php esc_html_e( 'Сочетается с:', 'mkarapuz' ) ?></h2>
 
 				<?php woocommerce_product_loop_start(); ?>
 
@@ -34,7 +34,7 @@
 
 					setup_postdata( $GLOBALS['post'] =& $post_object );
 
-					wc_get_template_part( 'content', 'product' ); ?>
+					wc_get_template_part( 'upsell', 'product' ); ?>
 
 				<?php endforeach; ?>
 

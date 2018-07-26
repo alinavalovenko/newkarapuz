@@ -85,6 +85,7 @@
 		die();
 	}
 
+
 	/**
 	 * Change number of related products output
 	 */
@@ -147,7 +148,11 @@
 	 */
 	function kz_change_loop_add_to_cart() {
 		remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
+		remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_product_link_close', 5 );
+
+		add_action( 'woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_link_close', 4 );
 		add_action( 'woocommerce_shop_loop_item_title', 'kz_template_loop_add_to_cart', 5 );
+		//add_action( 'woocommerce_after_shop_loop_item', 'kz_template_loop_add_to_cart', 10 );
 	}
 
 	add_action( 'init', 'kz_change_loop_add_to_cart', 10 );
@@ -226,7 +231,13 @@
 	add_action( 'woocommerce_share', 'bbloomer_woocommerce_output_upsells', 20 );
 	add_action( 'woocommerce_product_thumbnails', 'woocommerce_output_product_data_tabs', 25 );
 	add_action( 'woocommerce_product_thumbnails', 'woocommerce_output_related_products', 30 );
-
+	add_filter( 'woocommerce_get_image_size_gallery_thumbnail', function( $size ) {
+		return array (
+			'width'  => 450,
+			'height' => 450,
+			'crop'   => 0,
+		);
+	} );
 	function kz_upsell_add_to_cart() {
 
 		global $product;
@@ -284,3 +295,36 @@
 			}
 		endif;
 	}
+
+	add_action( 'woocommerce_single_product_summary', 'kz_single_add_to_wishlist', 5 );
+
+	function kz_single_add_to_wishlist() {
+		echo '<div class="kz-single-wishlist">' . do_shortcode( '[ti_wishlists_addtowishlist]' ) . '</div>';
+	}
+
+	add_action( 'woocommerce_before_add_to_cart_form', 'kz_additional_links', 5 );
+
+	function kz_additional_links() {
+		?>
+        <div class="kz-additionl-links">
+            <a href="" class="kz-delivery">Доставка</a>
+            <a href="" class="kz-faq">Задать вопрос</a>
+        </div>
+		<?php
+	}
+
+	remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20);
+	add_action('woocommerce_after_add_to_cart_form', 'woocommerce_template_single_excerpt');
+
+	add_filter( 'woocommerce_currency_symbol', 'kz_add_uah_currency_symbol', 10, 2 );
+	function kz_add_uah_currency_symbol( $currency_symbol, $currency ) {
+		switch ( $currency ) {
+			case 'UAH':
+				$currency_symbol = 'грн.';
+				break;
+		}
+
+		return $currency_symbol;
+	}
+
+

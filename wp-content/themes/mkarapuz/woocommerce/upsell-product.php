@@ -48,7 +48,7 @@
                 </div>
             </div>
             <div class="row">
-				<?php woocommerce_product_archive_description(); ?>
+				<?php echo $product->get_short_description(); ?>
             </div>
         </div>
     </div>

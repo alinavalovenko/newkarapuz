@@ -273,7 +273,7 @@
                 <form action="<?php echo esc_url( $product->add_to_cart_url() ); ?>" class="cart" method="post"
                       enctype="multipart/form-data">
 					<?php
-						echo sprintf( '<button type="submit" data-product_id="%s" data-product_sku="%s" data-quantity="1" class="%s button product_type_simple">%s</button>', esc_attr( $product->id ), esc_attr( $product->get_sku() ), esc_attr( $link['class'] ), esc_html( $link['label'] ) );
+						echo sprintf( '<button type="submit" data-product_id="%s" data-product_sku="%s" data-quantity="1" class="%s button product_type_simple kz-simple-add-to-cart">%s</button>', esc_attr( $product->id ), esc_attr( $product->get_sku() ), esc_attr( $link['class'] ), esc_html( $link['label'] ) );
 					?>
                 </form>
 				<?php

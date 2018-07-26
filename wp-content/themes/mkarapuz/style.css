@@ -569,6 +569,20 @@ clear: none !important;
 .kz-single-images-wrap .woocommerce-product-gallery__image {
 }
 
+.up-sells .single_variation_wrap
+{
+    float: right;
+    width: 30%;
+}
+.up-sells .kz-variation-values{
+    float: left;
+    width: 70%;
+}
+.up-sells .kz-add-to-cart-wrap{
+    width: 100%;
+    text-align: right;
+}
+
 /*** Shop page ***/
 header.woocommerce-products-header {
     background-image: none;

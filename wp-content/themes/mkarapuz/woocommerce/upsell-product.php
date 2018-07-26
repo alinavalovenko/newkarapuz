@@ -43,7 +43,9 @@
                 <div class="col-xs-4 col-sm-4"><?php woocommerce_template_loop_price(); ?></div>
             </div>
             <div class="row">
+                <div class="kz-add-to-cart-wrap">
 				<?php kz_upsell_add_to_cart(); ?>
+                </div>
             </div>
             <div class="row">
 				<?php woocommerce_product_archive_description(); ?>

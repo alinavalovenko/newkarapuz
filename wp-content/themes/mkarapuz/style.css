@@ -662,7 +662,8 @@ span.kz-breadcrumbs-delimeter {
     border-radius: 50%;
     margin: -13px -13px;
 }
-.kz-single-product .single_variation_wrap .woocommerce-variation .single_variation{
+.kz-single-product .single_variation_wrap .woocommerce-variation-description,
+.kz-single-product .single_variation_wrap .woocommerce-variation-price{
     display: none !important;
 }
 .kz-variation-values select {

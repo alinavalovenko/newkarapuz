@@ -145,26 +145,27 @@
 	/**
 	 * Replace add to cart button in the loop.
 	 */
-	function iconic_change_loop_add_to_cart() {
+	function kz_change_loop_add_to_cart() {
 		remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
-		add_action( 'woocommerce_after_shop_loop_item', 'iconic_template_loop_add_to_cart', 10 );
+		add_action( 'woocommerce_shop_loop_item_title', 'kz_template_loop_add_to_cart', 5 );
 	}
 
-	add_action( 'init', 'iconic_change_loop_add_to_cart', 10 );
+	add_action( 'init', 'kz_change_loop_add_to_cart', 10 );
 
 	/**
 	 * Use single add to cart button for variable products.
 	 */
-	function iconic_template_loop_add_to_cart() {
+	function kz_template_loop_add_to_cart() {
 		global $product;
 
 		if ( ! $product->is_type( 'variable' ) ) {
 			woocommerce_template_loop_add_to_cart();
+
 			return;
 		}
 
 		remove_action( 'woocommerce_single_variation', 'woocommerce_single_variation_add_to_cart_button', 20 );
-		add_action( 'woocommerce_single_variation', 'iconic_loop_variation_add_to_cart_button', 20 );
+		add_action( 'woocommerce_single_variation', 'kz_loop_variation_add_to_cart_button', 20 );
 
 		woocommerce_template_single_add_to_cart();
 	}
@@ -174,18 +175,34 @@
 	 *
 	 * Remove qty selector and simplify.
 	 */
-	function iconic_loop_variation_add_to_cart_button() {
+	function kz_loop_variation_add_to_cart_button() {
 		global $product;
 
 		?>
-		<div class="woocommerce-variation-add-to-cart variations_button">
-			<button type="submit" class="single_add_to_cart_button button"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
-			<input type="hidden" name="add-to-cart" value="<?php echo absint( $product->get_id() ); ?>" />
-			<input type="hidden" name="product_id" value="<?php echo absint( $product->get_id() ); ?>" />
-			<input type="hidden" name="variation_id" class="variation_id" value="0" />
-		</div>
+        <div class="woocommerce-variation-add-to-cart variations_button kz-variation-button">
+            <button type="submit"
+                    class="single_add_to_cart_button button"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
+            <input type="hidden" name="add-to-cart" value="<?php echo absint( $product->get_id() ); ?>"/>
+            <input type="hidden" name="product_id" value="<?php echo absint( $product->get_id() ); ?>"/>
+            <input type="hidden" name="variation_id" class="variation_id" value="0"/>
+        </div>
 		<?php
 	}
+
+	function kz_upsell_variation_add_to_cart_button() {
+		global $product;
+
+		?>
+        <div class="woocommerce-variation-add-to-cart variations_button kz-upsell-variation-button">
+            <button type="submit"
+                    class="single_add_to_cart_button button"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
+            <input type="hidden" name="add-to-cart" value="<?php echo absint( $product->get_id() ); ?>"/>
+            <input type="hidden" name="product_id" value="<?php echo absint( $product->get_id() ); ?>"/>
+            <input type="hidden" name="variation_id" class="variation_id" value="0"/>
+        </div>
+		<?php
+	}
+
 	/**
 	 * Change the breadcrumb separator
 	 */
@@ -193,6 +210,7 @@
 	function wcc_change_breadcrumb_delimiter( $defaults ) {
 		// Change the breadcrumb delimeter from '/' to '>'
 		$defaults['delimiter'] = '<span class="kz-breadcrumbs-delimeter"> &gt; </span>';
+
 		return $defaults;
 	}
 
@@ -200,22 +218,69 @@
 	remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_upsell_display', 15 );
 	remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
 
+
 	function bbloomer_woocommerce_output_upsells() {
-		woocommerce_upsell_display( 4,1 );
+		woocommerce_upsell_display( 4, 1 );
 	}
 
 	add_action( 'woocommerce_share', 'bbloomer_woocommerce_output_upsells', 20 );
 	add_action( 'woocommerce_product_thumbnails', 'woocommerce_output_product_data_tabs', 25 );
 	add_action( 'woocommerce_product_thumbnails', 'woocommerce_output_related_products', 30 );
 
+	function kz_upsell_add_to_cart() {
 
-	function kz_product_variation() {
 		global $product;
-		?>
 
-            <input type="hidden" name="add-to-cart" value="<?php echo absint( $product->get_id() ); ?>" />
-            <input type="hidden" name="product_id" value="<?php echo absint( $product->get_id() ); ?>" />
-            <input type="hidden" name="variation_id" class="variation_id" value="0" />
-		<?php
+		if ( ! $product->is_in_stock() ) : ?>
+            <a href="<?php echo apply_filters( 'out_of_stock_add_to_cart_url', get_permalink( $product->id ) ); ?>"
+               class="button"><?php echo apply_filters( 'out_of_stock_add_to_cart_text', __( 'Read More', 'woocommerce' ) ); ?></a>
+
+		<?php else : ?>
+			<?php
+			$link = array (
+				'url'   => '',
+				'label' => '',
+				'class' => '',
+			);
+			switch ( $product->product_type ) {
+				case "variable" :
+					$link['url']   = apply_filters( 'woocommerce_variable_add_to_cart', get_permalink( $product->id ) );
+					$link['label'] = apply_filters( 'variable_add_to_cart_text', __( 'Select options', 'woocommerce' ) );
+					$link['class'] = 'kz-variaton-add-to-cart';
+					break;
+				case "grouped" :
+					$link['url']   = apply_filters( 'grouped_add_to_cart_url', get_permalink( $product->id ) );
+					$link['label'] = apply_filters( 'grouped_add_to_cart_text', __( 'View options', 'woocommerce' ) );
+					break;
+				case "external" :
+					$link['url']   = apply_filters( 'external_add_to_cart_url', get_permalink( $product->id ) );
+					$link['label'] = apply_filters( 'external_add_to_cart_text', __( 'Read More', 'woocommerce' ) );
+					break;
+				default :
+					if ( $product->is_purchasable() ) {
+						$link['url']   = apply_filters( 'add_to_cart_url', esc_url( $product->add_to_cart_url() ) );
+						$link['label'] = apply_filters( 'add_to_cart_text', __( 'Add to cart', 'woocommerce' ) );
+						$link['class'] = apply_filters( 'add_to_cart_class', 'add_to_cart_button' );
+					} else {
+						$link['url']   = apply_filters( 'not_purchasable_url', get_permalink( $product->id ) );
+						$link['label'] = apply_filters( 'not_purchasable_text', __( 'Read More', 'woocommerce' ) );
+					}
+					break;
+			}
+			// If there is a simple product.
+			if ( $product->product_type == 'simple' ) {
+				?>
+                <form action="<?php echo esc_url( $product->add_to_cart_url() ); ?>" class="cart" method="post"
+                      enctype="multipart/form-data">
+					<?php
+						echo sprintf( '<button type="submit" data-product_id="%s" data-product_sku="%s" data-quantity="1" class="%s button product_type_simple">%s</button>', esc_attr( $product->id ), esc_attr( $product->get_sku() ), esc_attr( $link['class'] ), esc_html( $link['label'] ) );
+					?>
+                </form>
+				<?php
+			} else {
+				if ( ! empty( $link['url'] ) ) {
+					echo apply_filters( 'woocommerce_loop_add_to_cart_link', sprintf( '<a href="%s" rel="nofollow" data-product_id="%s" data-product_sku="%s" class="%s button product_type_%s">%s</a>', esc_url( $link['url'] ), esc_attr( $product->id ), esc_attr( $product->get_sku() ), esc_attr( $link['class'] ), esc_attr( $product->product_type ), esc_html( $link['label'] ) ), $product, $link );
+				}
+			}
+		endif;
 	}
-

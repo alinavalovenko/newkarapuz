@@ -27,27 +27,26 @@
 <li <?php wc_product_class(); ?>>
     <div class="row">
         <div class="col-xs-4 col-sm-4">
-	        <?php woocommerce_template_loop_product_link_open(); ?>
-	        <?php woocommerce_show_product_loop_sale_flash(); ?>
-	        <?php woocommerce_template_loop_product_thumbnail(); ?>
-	        <?php woocommerce_template_loop_product_link_close(); ?>
+			<?php woocommerce_template_loop_product_link_open(); ?>
+			<?php woocommerce_show_product_loop_sale_flash(); ?>
+			<?php woocommerce_template_loop_product_thumbnail(); ?>
+			<?php woocommerce_template_loop_product_link_close(); ?>
         </div>
         <div class="col-xs-8 col-sm-8">
             <div class="row">
                 <div class="col-xs-8 col-sm-8">
-	                <?php woocommerce_template_loop_product_link_open(); ?>
-	                <?php woocommerce_template_loop_product_title(); ?>
-	                <?php woocommerce_template_loop_product_link_close(); ?>
+					<?php woocommerce_template_loop_product_link_open(); ?>
+					<?php woocommerce_template_loop_product_title(); ?>
+					<?php woocommerce_template_loop_product_link_close(); ?>
 
                 </div>
                 <div class="col-xs-4 col-sm-4"><?php woocommerce_template_loop_price(); ?></div>
             </div>
             <div class="row">
-                <div class="col-xs-8 col-sm-8"><?php woocommerce_result_count(); ?></div>
-                <div class="col-xs-4 col-sm-4"><?php woocommerce_template_loop_add_to_cart(); ?></div>
+				<?php kz_upsell_add_to_cart(); ?>
             </div>
             <div class="row">
-                <?php woocommerce_product_archive_description();  ?>
+				<?php woocommerce_product_archive_description(); ?>
             </div>
         </div>
     </div>

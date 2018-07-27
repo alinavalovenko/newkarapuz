@@ -374,6 +374,10 @@ footer .footer-logo {
 /*** FRONT PAGE ***/
 .home .kz-top-banner-wrap {
     padding: 0px;
+    max-height: 750px;
+    height: 800px;
+    position: relative;
+    overflow: hidden;
 }
 
 .home .kz-banner-holder {
@@ -528,6 +532,39 @@ footer .footer-logo {
     width: 22.05%;
 }
 
+.home .kz-newest-products-section{
+    position: relative;
+}
+.home .kz-newest-products-section:before {
+    position: absolute;
+    background: url(assets/images/bg3.png) no-repeat;
+    content:'';
+    height: 348px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.home .kz-sales-section-wrap {
+    position: relative;
+    padding: 0 0 0 20px !important;
+}
+.home .kz-sales-section-wrap:before{
+    content: '';
+    position: absolute;
+    background: url(assets/images/bg1.png) no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 489px;
+    height: 650px;
+    bottom: 10%;
+    left: 0;
+    pointer-events: none;
+}
+
 .kz-recent-products ul.products li {
     margin: 0 1.2% 0 0 !important;
 }
@@ -587,11 +624,9 @@ span.kz-breadcrumbs-delimeter {
 .up-sells .single_variation_wrap
 {
     float: right;
-    width: 30%;
 }
 .up-sells .kz-variation-values{
     float: left;
-    width: 70%;
 }
 .up-sells .kz-add-to-cart-wrap{
     width: 100%;
@@ -619,6 +654,11 @@ span.kz-breadcrumbs-delimeter {
     line-height: 1.15;
     font-weight: 600;
     border-bottom: solid #e0e0e0;
+    border-width: 1px 0;
+    padding-bottom: 24px;
+}
+.kz-single-product .product_meta{
+    border-top: solid #e0e0e0;
     border-width: 1px 0;
     padding-bottom: 24px;
 }
@@ -724,4 +764,105 @@ span.kz-breadcrumbs-delimeter {
 }
 .kz-single-product .woocommerce div.product form.cart .button{
     float: none !important;
+}
+.kz-single-product .product_meta {
+    border-top: solid #e0e0e0;
+    border-bottom: solid #e0e0e0;
+    border-width: 1px 0;
+    padding: 24px 0 0 0;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #b3b8c3;
+}
+
+.kz-single-product  .woocommerce-product-details__short-description {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #4a4a4a;
+    padding: 15px 0;
+    font-family: 'Roboto', 'Open Sans';
+}
+.kz-single-product  .posted_in{
+    display: none;
+}
+/** Up-sells **/
+.kz-single-product .up-sells h2 {
+    height: 21px;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: normal;
+    color: #000000;
+    margin: 15px 0;
+    font-weight: 600;
+}
+.up-sells table.variations tr td{
+    display: inline-block;
+    margin: 0 auto;
+}
+.up-sells table.variations tr:last-child td.label{
+    display: none;
+}
+.up-sells .kz-variation-values table.variations {
+    text-align: left;
+    display: inline-block;
+}
+.up-sells .kz-additionl-links{
+    display: none;
+    width: 0;
+    height: 0;
+}
+.up-sells .price{
+    border-bottom: none;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    line-height: 1.67;
+    color: #ff8500 !important;
+    text-align: right;
+}
+.up-sells ul.products li.product, .up-sells ul.products li.product {
+    border-bottom: solid #e0e0e0;
+    border-width: 1px 0;
+    margin: 8px 0;
+    padding: 15px 0;
+}
+.up-sells ul.products>li:first-child {
+    margin: 0 auto !important;
+    padding-top: 0 !important;
+}
+.up-sells ul.products>li:last-child{
+    border: none;
+}
+
+.up-sells .upsell-details .kz-opener {
+    font-size: 14px;
+    color: #ff8500;
+    text-decoration: underline;
+    margin: 0 0 0 15px;
+}
+.kz-opener:after {
+    content: '\2193';
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 0 0 5px;
+}
+.kz-opener {
+    font-weight: normal;
+}
+.kz-opener {
+    cursor: pointer;
+}
+.up-sells a.add_to_cart_button.button.product_type_variation {
+    padding: 12px 10px;
+    height: 40px;
+    border-radius: 25px;
+    color: #fff;
+    background-color: #86cc00 !important;
+    box-shadow: 0 2px 12px 0 #9fc84f;
+    border: none;
+    text-transform: none;
+    text-align: center;
 }

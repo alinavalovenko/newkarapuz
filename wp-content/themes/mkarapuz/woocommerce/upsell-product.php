@@ -47,8 +47,13 @@
 				<?php kz_upsell_add_to_cart(); ?>
                 </div>
             </div>
-            <div class="row">
-				<?php echo $product->get_short_description(); ?>
+            <div class="row upsell-details">
+                <div class="kz-opener-slider">
+                    <div class="kz-opener">Подробнее о товаре</div>
+                    <div class="kz-open-block">
+	                    <?php echo $product->get_short_description(); ?>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -302,17 +302,6 @@
 		echo '<div class="kz-single-wishlist">' . do_shortcode( '[ti_wishlists_addtowishlist]' ) . '</div>';
 	}
 
-	add_action( 'woocommerce_before_add_to_cart_form', 'kz_additional_links', 5 );
-
-	function kz_additional_links() {
-		?>
-        <div class="kz-additionl-links">
-            <a href="" class="kz-delivery">Доставка</a>
-            <a href="" class="kz-faq">Задать вопрос</a>
-        </div>
-		<?php
-	}
-
 	remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20);
 	add_action('woocommerce_after_add_to_cart_form', 'woocommerce_template_single_excerpt');
 

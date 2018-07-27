@@ -55,6 +55,10 @@
                     </tbody>
                 </table>
             </div>
+            <div class="kz-additionl-links">
+                <a href="" class="kz-delivery">Доставка</a>
+                <a href="" class="kz-faq">Задать вопрос</a>
+            </div>
             <div class="single_variation_wrap">
 				<?php
 					/**

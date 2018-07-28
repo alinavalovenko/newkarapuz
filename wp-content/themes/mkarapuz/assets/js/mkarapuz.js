@@ -27,5 +27,4 @@ jQuery(window).ready(function () {
         autoplaySpeed: 2000,
 
     });
-
 });

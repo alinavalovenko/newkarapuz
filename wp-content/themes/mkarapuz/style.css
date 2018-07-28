@@ -636,6 +636,7 @@ span.kz-breadcrumbs-delimeter {
     color: #000000;
     font-size: 30px;
     float: left;
+    max-width: 90%;
 }
 .kz-single-product .kz-single-wishlist {
     float: right;
@@ -865,4 +866,37 @@ span.kz-breadcrumbs-delimeter {
     border: none;
     text-transform: none;
     text-align: center;
+}
+
+ul.products .kz-additionl-links{
+    display: none !important;
+}
+.woocommerce ul.products li.product .button {
+     margin-top: 0;
+}
+.modal-dialog.modal-lg.kz-modal-dialog,
+.modal-dialog.modal-lg.kz-delivey-dialog {
+    margin: 15% auto !important;
+}
+.kz-single-image-wrap a {
+    width: 33px;
+    height: 24px;
+    display: block;
+}
+.kz-single-image-wrap {
+    background: url(assets/images/size.png) no-repeat;
+    background-size: cover;
+    width: 33px;
+    height: 24px;
+    cursor: pointer;
+    float: left;
+    margin: 9px 0 0;
+}
+.kz-single-product form.cart .reset_variations {
+    visibility: hidden;
+    font-size: .83em;
+    float: left;
+    max-width: 3%;
+    line-height: 40px;
+    padding: 0px 0 0 5px;
 }

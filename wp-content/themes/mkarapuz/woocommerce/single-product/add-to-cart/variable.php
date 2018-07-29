@@ -49,6 +49,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 									'attribute' => $attribute_name,
 									'product'   => $product,
 								) );
+								echo end( $attribute_keys ) === $attribute_name ? wp_kses_post( apply_filters( 'woocommerce_reset_variations_link', '<a class="reset_variations" href="#">' . esc_html__( 'Clear', 'woocommerce' ) . '</a>' ) ) : '';
 								if ( ! next( $attributes ) ) { ?>
                                     <div class="kz-single-image-wrap">
                                         <a class="kz-modal-sizes-link" data-toggle="modal"
@@ -62,8 +63,8 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
                                             </div>
                                         </div>
                                     </div>
+
 								<?php }
-								echo end( $attribute_keys ) === $attribute_name ? wp_kses_post( apply_filters( 'woocommerce_reset_variations_link', '<a class="reset_variations" href="#">' . esc_html__( 'Clear', 'woocommerce' ) . '</a>' ) ) : '';
 
 								?>
                             </td>

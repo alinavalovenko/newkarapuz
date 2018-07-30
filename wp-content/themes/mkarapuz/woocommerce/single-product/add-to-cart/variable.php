@@ -49,24 +49,12 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 									'attribute' => $attribute_name,
 									'product'   => $product,
 								) );
-								echo end( $attribute_keys ) === $attribute_name ? wp_kses_post( apply_filters( 'woocommerce_reset_variations_link', '<a class="reset_variations" href="#">' . esc_html__( 'Clear', 'woocommerce' ) . '</a>' ) ) : '';
-								if ( ! next( $attributes ) ) { ?>
+								if ( end( $attribute_keys ) === $attribute_name ) { ?>
                                     <div class="kz-single-image-wrap">
-                                        <a class="kz-modal-sizes-link" data-toggle="modal"
-                                           data-target=".kz-modal-sizes"></a>
+                                        <a class="kz-modal-sizes-link"></a>
                                     </div>
-                                    <div class="modal fade kz-modal-sizes" tabindex="-1" role="dialog"
-                                         aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog modal-lg kz-modal-dialog">
-                                            <div class="modal-content">
-                                                ...
-                                            </div>
-                                        </div>
-                                    </div>
-
-								<?php }
-
-								?>
+									<?php echo wp_kses_post( apply_filters( 'woocommerce_reset_variations_link', '<a class="reset_variations" href="#">' . esc_html__( 'Clear', 'woocommerce' ) . '</a>' ) ); ?>
+								<?php }	?>
                             </td>
                         </tr>
 					<?php endforeach; ?>
@@ -74,8 +62,8 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
                 </table>
             </div>
             <div class="kz-additionl-links">
-                    <a class="kz-delivey" data-toggle="modal"
-                       data-target=".kz-delivey-modal">Доставка и оплата</a>
+                <a class="kz-delivey" data-toggle="modal"
+                   data-target=".kz-delivey-modal">Доставка и оплата</a>
                 <div class="modal fade kz-delivey-modal" tabindex="-1" role="dialog"
                      aria-labelledby="kzdelivery" aria-hidden="true">
                     <div class="modal-dialog modal-lg kz-delivey-dialog">

@@ -900,3 +900,6 @@ ul.products .kz-additionl-links{
     line-height: 40px;
     padding: 0px 0 0 5px;
 }
+li .kz-single-image-wrap{
+    display: none;
+}

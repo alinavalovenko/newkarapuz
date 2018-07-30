@@ -31,9 +31,15 @@ jQuery(window).ready(function () {
     jQuery('.kz-opener-slider .kz-opener').click(function() {
         jQuery(this).parents('.kz-opener-slider').toggleClass("show-text");
     });
-    jQuery('.flex-control-thumbs').slick({
+    jQuery('.woocommerce-product-gallery ol').slick({
+        infinite: false,
         vertical: true,
-        slidesToShow: 3,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next'),
         slidesToScroll: 1,
+        slidesToShow: 3,
+        verticalSwiping: true,
+        slide: 'li',
+        fade: false,
     });
 });

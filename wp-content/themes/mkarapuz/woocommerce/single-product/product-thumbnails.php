@@ -32,3 +32,4 @@ if ( $attachment_ids && has_post_thumbnail() ) {
 		echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', wc_get_gallery_image_html( $attachment_id  ), $attachment_id );
 	}
 }
+

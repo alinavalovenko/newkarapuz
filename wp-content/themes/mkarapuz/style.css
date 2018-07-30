@@ -800,6 +800,10 @@ span.kz-breadcrumbs-delimeter {
     margin: 15px 0;
     font-weight: 600;
 }
+.up-sells li .kz-variation-values {
+    padding-left: 15px;
+    margin: -20px 0 0 0;
+}
 .up-sells table.variations tr td{
     display: inline-block;
     margin: 0 auto;
@@ -902,4 +906,57 @@ ul.products .kz-additionl-links{
 }
 li .kz-single-image-wrap{
     display: none;
+}
+
+
+.kz-open-block {
+    display: none;
+    font-size: 14px;
+    line-height: 17px;
+    color: #777;
+    padding:25px 0 0;
+}
+
+.kz-opener {
+    cursor: pointer;
+}
+
+.kz-opener:after {
+    content:'\2193';
+    display: inline-block;
+    vertical-align: top;
+    padding:0 0 0 5px;
+}
+
+.kz-opener-slider.show-text .kz-opener:after{
+    content:'\2191';
+}
+
+.kz-opener-slider.show-text .kz-opener {
+    color: #999;
+}
+
+
+.kz-opener-slider.show-text .kz-open-block {
+    display: block;
+}
+
+.woocommerce div.product div.images .flex-control-thumbs li{
+    float: none;
+    width: 100%;
+}
+.woocommerce div.product div.images .flex-control-thumbs {
+    max-width: 25%;
+}
+.kz-single-images-wrap .flex-viewport {
+    max-width: 75%;
+    float: right;
+}
+.kz-product_tabs-wrapper{
+    float: left;
+}
+ol.flex-control-nav.flex-control-thumbs li img {
+    border-radius: 3px;
+    box-shadow: 0 2px 15px 0 rgba(17, 67, 117, 0.24);
+    padding: 15px;
 }

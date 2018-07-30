@@ -229,8 +229,6 @@
 	}
 
 	add_action( 'woocommerce_share', 'bbloomer_woocommerce_output_upsells', 20 );
-	add_action( 'woocommerce_product_thumbnails', 'woocommerce_output_product_data_tabs', 25 );
-	add_action( 'woocommerce_product_thumbnails', 'woocommerce_output_related_products', 30 );
 	add_filter( 'woocommerce_get_image_size_gallery_thumbnail', function( $size ) {
 		return array (
 			'width'  => 450,
@@ -302,8 +300,8 @@
 		echo '<div class="kz-single-wishlist">' . do_shortcode( '[ti_wishlists_addtowishlist]' ) . '</div>';
 	}
 
-	remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20);
-	add_action('woocommerce_product_meta_end', 'woocommerce_template_single_excerpt');
+	remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
+	add_action( 'woocommerce_product_meta_end', 'woocommerce_template_single_excerpt' );
 
 	add_filter( 'woocommerce_currency_symbol', 'kz_add_uah_currency_symbol', 10, 2 );
 	function kz_add_uah_currency_symbol( $currency_symbol, $currency ) {
@@ -316,4 +314,18 @@
 		return $currency_symbol;
 	}
 
+	add_theme_support( 'wc-product-gallery-lightbox' );
+	add_theme_support( 'wc-product-gallery-slider' );
+	add_filter( 'woocommerce_product_thumbnails_columns', 'kz_change_thumbnail_count' );
+	function kz_change_thumbnail_count() {
+		return 1;
+	}
 
+	function main_content_after_product_gallery() {
+		echo '<div class="col-xs-12 col-sm-6 col-md-6 kz-product_tabs-wrapper">';
+		woocommerce_output_product_data_tabs();
+		woocommerce_output_related_products();
+		echo '</div>';
+		echo '</div>';
+	}
+	add_action( 'woocommerce_after_single_product_summary' , 'main_content_after_product_gallery', 5 );
